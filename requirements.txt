@@ -6,7 +6,6 @@ docutils==0.13.1
 gunicorn==19.7.1
 idna==2.5
 pyephem==3.7.6.0
-pygame==1.9.3
 Pygments==2.2.0
 pyserial==3.4
 pytz==2017.2
