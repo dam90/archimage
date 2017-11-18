@@ -1,0 +1,320 @@
+---------------------------------------------------------------
+D. Medearis  
+July 2017
+---------------------------------------------------------------
+    
+    Archimage Telescope Mount: Serial Communications Breakout
+
+---------------------------------------------------------------
+The following notes detail the comms protocol for the archimage mount.  I ran C-sat in compatability mode, and captured
+serial packets as I operated the telescope.  I describe in terms of hex bytes... since it's easy to keep track of.
+
+Helfpul links:
+Serial COM: https://en.wikipedia.org/wiki/Binary_Synchronous_Communications
+Fletcher/ASCOM: http://www.picaxeforum.co.uk/showthread.php?17872-Calculating-checksums-for-serial-communication-(yuk!)
+Fletcher: https://en.wikipedia.org/wiki/Fletcher%27s_checksum
+
+A message goes: [Header][Counter][Payload Bytes][Check Bytes][Footer]
+
+I'll break each of these down below, then provide an example.
+
+Header: 100201
+
+    HEX | Symbol | Comments
+    -------------------------------
+    10  |   DLE  | "Data Link Escape"
+    02  |   STX  | "Start of Text"
+    01  |   SOH  | "Start of heading"
+
+Counter: CC
+
+    A single hex byte that counts up by 16.
+    
+    The counter initializes as hex 00
+    
+    After the first reponse in increments to hex 11 (decimal 17).  It then increments by hex 10 (decimal 16) until 
+    it exceeds hex FF (decimal 255).  It then resets to hex 11 (decimal 17) and repeats.
+
+Check Bytes: CB0\CB1
+
+    Check bytes corresponding to the fletcher-16 checksum
+
+    Inspection indicates that fletcher-16 of [SOH]\[CC]\[PAYLOAD]\[CB0][CB1] = \00\00, for all collected data
+
+    CB0 and CB1 are based on the fletcher-16 of the payload, without the check bytes.  First compute the checksum
+    of payload (including SOH), then compute the check bytes.
+
+    Checksum used is fletcher 16-bit using modulus 255.
+
+    Check bits are calculated as:
+    
+    Let:
+
+    C0 = fletcher-16 1st byte
+    C1 = fletcher-16 2nd byte
+    
+    Then:
+
+    CB0 = 255 − ((C0 + C1) mod 255),
+    CB1 = 255 − ((C0 + CB0) mod 255)
+
+Footer: 1003
+
+    HEX | Symbol | Comments
+    -------------------------------
+    10  |   DLE  | "Data Link Escape"
+    03  |   ETX  | "End of Text"
+    
+Example:
+
+
+
+Here hex bytes delimited with "\" a transmission goes like:
+10\02\01\CC\[DATA PAYLOAD]\CB0\CB1\10\03
+
+Commands discovered in serial capture:
+
+get flag[1]
+home find
+status
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+set flag[0]
+get flag[0]
+get flag[16]
+move north
+stop
+stop north
+stop south
+stop east
+stop west
+move south
+get flag[16]
+move east
+move west
+set sidereal
+home park
+set objectdec
+set objectra
+goto
+get x_topspeed
+set speed
+set trackha
+set trackdec
+
+Possible commands:
+
+home setup
+sync
+
+---------------------------------------
+These are from MCCScope:
+
+RA
+get ra
+
+Dec
+get dec
+
+HA
+get ha
+
+Az
+get az
+
+Alt
+get alt
+
+Sidereal
+get sidereal
+
+Latitude
+get latitude
+
+ABOUT_DIALOG
+Connection Established
+Break connection before leaving MCCScope
+MerlinStar
+TimeZone
+6.0
+merlin.ini
+Epoch
+2000.0
+Precess
+Longitude
+105d04m55s
+File
+COM1
+COM2
+COM3
+COM4
+1200
+2400
+9600
+19200
+TelescopePort
+TelescopeBaud
+ServicePort
+ServiceBaud
+ServiceDial
+13034944774
+standard.odf
+Mercury
+Venus
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
+Pluto
+Retries: %5d Failures: %5d
+aEError
+Unable to open Object file.
+INITIAL
+device
+	
+PTCS
+ArchImage
+Confirm
+Unable to establish connection
+*.ODF
+set objectra=
+set objectdec=
+Star Near Zenith
+Star In Southeast Sky
+Star In Southwest Sky
+set x_display="CTR1"
+
+Center 
+sync
+
+goto
+
+set x_display="CTR
+) RA: 
+   Dec: 
+set x_display="AL U"
+
+Increase altitude
+set x_display="AZ W"
+
+Move azimuth west
+set x_display="AZ E"
+
+Move azimuth east
+set x_display="AL D"
+
+Decrease altitude
+Result
+set x_display=""
+
+set flag[0]=0
+
+set flag[20]=0
+
+set flag[22]=0
+
+First Alignment Object
+Second Alignment Object
+Align tube with Azimuth axis.
+set alt=90.0d
+
+set x_display = "CTR1"
+
+set x_display = "CTR2"
+
+`jGset x_display = "ERR "
+
+May have centered wrong star.
+Unable to Align
+set sidereal=
+h
+
++
+1?
+Cset az=
+set alt=
+set latitude=
+set flag[0]=1
+
+lat=
+side=
+az=
+alt=
+Alignment Results
+get flag[4]
+
+get objectaz
+get objectalt
+AltAz Goto
+Azimuth:
+Altitude:
+goto objectaz=
+ objectalt=
+home find
+
+ATSU Set
+home setup
+
+home park
+
+ATSU Park Set
+home x_parkset
+
+IECA Clear
+x_ieca x_clear
+
+IECA Point
+x_ieca x_point
+
+PEC Clear
+x_pec x_clear
+
+PEC Learn
+x_pec x_learn
+
+get trackha
+set trackha = 
+Enter HA Track Rate Offset:
+get trackdec
+set trackdec = 
+Enter Dec Track Rate Offset:
+get x_ccdguide
+set x_ccdguide = 
+Enter CCD Guider Rate:
+mccscope.log
+status
+
+get objectra
+
+get objectdec
+
+get x_correction_ha
+
+get x_correction_dec
+
+pB
+aDInfo
+Edit Value
+set ra = 
+Enter Right Ascension:
+set dec = 
+Enter Declination:
+set ha = 
+Enter Hour Angle:
+set az = 
+Enter Azimuth:
+set alt = 
+Enter Altitude:
+set sidereal = 
+Enter Sidereal Time:
+set latitude = 
+Enter Latitude:
+Slew
+Moving to Coordinates
+Home
+Searching for Home Sensors

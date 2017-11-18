@@ -1,0 +1,23 @@
+{% block content %}
+<h3>Paddle</h3>
+
+<button id="paddle_north" data-downcommand="move_north" data-upcommand="stop_north" type="submit" class="btn btn-primary pull-left inline-block">
+  <span class="glyphicon glyphicon-arrow-up"></span><br/> North
+</button>
+
+<button id="paddle_south" data-downcommand="move_south" data-upcommand="stop_south" type="submit" class="btn btn-primary pull-left inline-block">
+  <span class="glyphicon glyphicon-arrow-down"></span><br/> South
+</button>
+
+<button id="paddle_east" data-downcommand="move_east" data-upcommand="stop_east" type="submit" class="btn btn-primary pull-left inline-block">
+  <span class="glyphicon glyphicon-arrow-right"></span><br/> East
+</button>
+
+<button id="paddle_west" data-downcommand="move_west" data-upcommand="stop_west" type="submit" class="btn btn-primary pull-left">
+  <span class="glyphicon glyphicon-arrow-left inline-block"></span><br/> West
+</button>
+
+<button id ="stop" data-downcommand="stop" type="submit" class="btn btn-danger pull-left">
+  <span class="glyphicon glyphicon-stop inline-block"></span><br/> STOP
+</button>
+{% endblock %}

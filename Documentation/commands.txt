@@ -1,0 +1,7248 @@
+Commands discovered in serial capture:
+
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+home find
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get flag[1]
+get alt
+get sidereal
+set flag[0]=1
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+set flag[0]=0
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get flag[1]
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+set flag[0]=1
+get alt
+get flag[1]
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get flag[1]
+get alt
+get sidereal
+get flag[1]
+move north
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get flag[1]
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+stop
+stop north
+stop south
+stop east
+stop west
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get flag[1]
+get sidereal
+move south
+get flag[1]
+get flag[0]
+get flag[16]À
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get flag[1]
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+stop
+stop north
+stop south
+stop east
+stop west
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+move east
+get flag[1]
+get ra
+get ha
+get dec
+get flag[1]
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get flag[1]
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get flag[1]
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]À
+stop
+stop north
+stop south
+stop east
+stop west
+get flag[1]
+get ra
+get ha
+move west
+get dec
+get flag[1]
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get flag[1]
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get az
+get flag[1]
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get flag[1]
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+get ha
+get dec
+get flag[1]
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get ra
+stop
+stop north
+stop south
+stop east
+stop west
+get flag[1]
+get ha
+get dec
+get az
+get alt
+get sidereal
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get ra
+get flag[1]
+get ha
+get flag[1]
+get dec
+get az
+get flag[1]
+get alt
+get sidereal
+get flag[1]
+get flag[0]
+get flag[16]
+get flag[1]
+get flag[1]
+set sidereal=2.733547h
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+home park
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set objectdec=16.546600d
+set objectra=4.61535389h
+goto
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+home park
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set objectdec=16.546600d
+set objectra=4.61535389h
+goto
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set objectdec=16.710168d
+set objectra=3.63640384h
+goto
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set objectdec=-29.526159d
+set objectra=22.97642020h
+goto
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+home park
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set sidereal=2.781455h
+get flag[1]
+get flag[1]
+home find
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+status
+get flag[1]
+status
+status
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get x_topspeed
+get flag[1]
+get flag[1]
+get ra
+get dec
+get x_topspeed
+get flag[1]
+get x_topspeed
+get flag[1]
+set objectdec=56.633591d
+set objectra=0.69172743h
+goto
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+set speed=0.650138d
+stop west
+stop east
+stop north
+stop south
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+stop
+stop north
+stop south
+stop east
+stop west
+get x_topspeed
+set speed=4.000000d
+get flag[1]
+get flag[1]
+set objectdec=55.693647d
+set objectra=1.18115444h
+goto
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set speed=0.000000d
+move north
+move east
+get ra
+get dec
+set trackha=-0.028581d
+set trackdec=-0.013427d
+get ra
+get dec
+set trackha=-0.028571d
+set trackdec=-0.013436d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.028559d
+set trackdec=-0.013446d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028546d
+set trackdec=-0.013457d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028534d
+set trackdec=-0.013467d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028521d
+set trackdec=-0.013477d
+get ra
+get dec
+set trackha=-0.028509d
+set trackdec=-0.013488d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.028497d
+set trackdec=-0.013498d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011514d
+set trackdec=-0.013508d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028472d
+set trackdec=-0.013519d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028460d
+set trackdec=-0.013529d
+get ra
+get dec
+set trackha=-0.028447d
+set trackdec=-0.013539d
+get ra
+get dec
+set trackha=-0.028435d
+set trackdec=-0.013550d
+get ra
+get dec
+set trackha=-0.010432d
+set trackdec=-0.013560d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.028410d
+set trackdec=-0.013571d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028398d
+set trackdec=-0.013581d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028385d
+set trackdec=-0.013591d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011433dÄ
+set trackdec=-0.013602d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028361d
+set trackdec=-0.013612d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028348d
+set trackdec=-0.013622d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028336d
+set trackdec=-0.013633d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011289d
+set trackdec=-0.013643d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028311d
+set trackdec=-0.013653d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028299d
+set trackdec=-0.013664d
+get ra
+get dec
+set trackha=-0.028287d
+set trackdec=-0.013674d
+get ra
+get dec
+set trackha=-0.028274d
+set trackdec=-0.013684d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.009078d
+set trackdec=-0.013695d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028250d
+set trackdec=-0.013705d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028237d
+set trackdec=-0.013715d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011319d
+set trackdec=-0.013726d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028213d
+set trackdec=-0.013736d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028201d
+set trackdec=-0.013746d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028188d
+set trackdec=-0.013757d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028176d
+set trackdec=-0.013767d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010212d
+set trackdec=-0.013778d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028151d
+set trackdec=-0.013788d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028139d
+set trackdec=-0.013798d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028127d
+set trackdec=-0.013809d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010588d
+set trackdec=-0.013819d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028102d
+set trackdec=-0.013829d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028090d
+set trackdec=-0.013840d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028078d
+set trackdec=-0.013850d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010797d
+set trackdec=-0.013860d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028053d
+set trackdec=-0.013871d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028041d
+set trackdec=-0.013881d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028028d
+set trackdec=-0.013891d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011061d
+set trackdec=-0.013902d
+get flag[1]
+get ra
+get dec
+set trackha=-0.028004d
+set trackdec=-0.013912d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027992d
+set trackdec=-0.013922d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027979d
+set trackdec=-0.013933d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011101d
+set trackdec=-0.013943d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027955d
+set trackdec=-0.013953d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027943d
+set trackdec=-0.013964d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027930d
+set trackdec=-0.013974d
+get flag[1]
+get ra
+get dec
+set trackha=-0.011234d
+set trackdec=-0.013984d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027906d
+set trackdec=-0.013995d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027894d
+set trackdec=-0.014005d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027881d
+set trackdec=-0.014015d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027869d
+set trackdec=-0.014026d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010024d
+set trackdec=-0.014036d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027845d
+set trackdec=-0.014046d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027833d
+set trackdec=-0.014057d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010758d
+set trackdec=-0.014067d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027808d
+set trackdec=-0.014077d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027796d
+set trackdec=-0.014088d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027784d
+set trackdec=-0.014098d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010965d
+set trackdec=-0.014108d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027759d
+set trackdec=-0.014119d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027747d
+set trackdec=-0.014129dl
+get flag[1]
+get ra
+get dec
+set trackha=-0.027735d
+set trackdec=-0.014140d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010985d
+set trackdec=-0.014150d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027711d
+set trackdec=-0.014160d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027699d
+set trackdec=-0.014171d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027686d
+set trackdec=-0.014181d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027674d
+set trackdec=-0.014191d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009838d
+set trackdec=-0.014202d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027650d
+set trackdec=-0.014212d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027638d
+set trackdec=-0.014222d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027626d
+set trackdec=-0.014233d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010149d
+set trackdec=-0.014243d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027601d
+set trackdec=-0.014253d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027589d
+set trackdec=-0.014264d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027577d
+set trackdec=-0.014274d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010357d
+set trackdec=-0.014284d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027553d
+set trackdec=-0.014295d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027540d
+set trackdec=-0.014305d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027528d
+set trackdec=-0.014315d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010537d
+set trackdec=-0.014326d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027504d
+set trackdec=-0.014336d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027492d
+set trackdec=-0.014346d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027480d
+set trackdec=-0.014357d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009626d
+set trackdec=-0.014367d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027456d
+set trackdec=-0.014377d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027444d
+set trackdec=-0.014388d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027432d
+set trackdec=-0.014398d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027419d
+set trackdec=-0.014408d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008656d
+set trackdec=-0.014419d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027395d
+set trackdec=-0.014429d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027383d
+set trackdec=-0.014439d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010608d
+set trackdec=-0.014450d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027359d
+set trackdec=-0.014460d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027347d
+set trackdec=-0.014470d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027335d
+set trackdec=-0.014481d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010615d
+set trackdec=-0.014491d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027311d
+set trackdec=-0.014501d2
+get flag[1]
+get ra
+get dec
+set trackha=-0.027299d
+set trackdec=-0.014512d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027287d
+set trackdec=-0.014522d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027275d
+set trackdec=-0.014532d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009634d
+set trackdec=-0.014543d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027250d
+set trackdec=-0.014553d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027238d
+set trackdec=-0.014563d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027226d
+set trackdec=-0.014574d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010097d
+set trackdec=-0.014584d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027203d
+set trackdec=-0.014594d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027190d
+set trackdec=-0.014605d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027178d
+set trackdec=-0.014615d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010072d
+set trackdec=-0.014625d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027154d
+set trackdec=-0.014636d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027142d
+set trackdec=-0.014646d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027130d
+set trackdec=-0.014656d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010269d
+set trackdec=-0.014667d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027106d
+set trackdec=-0.014677d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027095d
+set trackdec=-0.014687d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027083d
+set trackdec=-0.014698d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010364d
+set trackdec=-0.014708d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027059d
+set trackdec=-0.014718d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027047d
+set trackdec=-0.014729d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027035d
+set trackdec=-0.014739d
+get flag[1]
+get ra
+get dec
+set trackha=-0.010285d
+set trackdec=-0.014749d
+get flag[1]
+get ra
+get dec
+set trackha=-0.027011d
+set trackdec=-0.014760d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026999d
+set trackdec=-0.014770d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026987d
+set trackdec=-0.014780d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026975d
+set trackdec=-0.014791d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008002d
+set trackdec=-0.014801d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026951d
+set trackdec=-0.014811dÎ
+get flag[1]
+get ra
+get dec
+set trackha=-0.026939d
+set trackdec=-0.014822d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026927d
+set trackdec=-0.014832d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008872d
+set trackdec=-0.014842d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026903d
+set trackdec=-0.014853d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026891d
+set trackdec=-0.014863d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026880d
+set trackdec=-0.014873d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009410d
+set trackdec=-0.014884d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026856d
+set trackdec=-0.014894d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026844d
+set trackdec=-0.014904d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026832d
+set trackdec=-0.014915d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009790d
+set trackdec=-0.014925d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026808d
+set trackdec=-0.014935d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026796d
+set trackdec=-0.014946d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026784d
+set trackdec=-0.014956d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009888d
+set trackdec=-0.014966d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026761d
+set trackdec=-0.014977d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026749d
+set trackdec=-0.014987d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026737d
+set trackdec=-0.014997d
+get ra
+get dec
+get flag[1]
+set trackha=-0.009949d
+set trackdec=-0.015008d
+get ra
+get dec
+set trackha=-0.026713d
+set trackdec=-0.015018d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.026702d
+set trackdec=-0.015028d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026690d
+set trackdec=-0.015039d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009836d
+set trackdec=-0.015049d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026666d
+set trackdec=-0.015059d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026654d
+set trackdec=-0.015070d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026642d
+set trackdec=-0.015080d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009753d
+set trackdec=-0.015090d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026619d
+set trackdec=-0.015100d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026607d
+set trackdec=-0.015111d
+get ra
+get dec
+get flag[1]
+set trackha=-0.026595d
+set trackdec=-0.015121d
+get ra
+get dec
+set trackha=-0.026583d
+set trackdec=-0.015132d1
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.008564d
+set trackdec=-0.015142d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026560d
+set trackdec=-0.015152d
+get ra
+get dec
+get flag[1]
+set trackha=-0.026548d
+set trackdec=-0.015162d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009462d
+set trackdec=-0.015173d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026525d
+set trackdec=-0.015183d
+get ra
+get dec
+set trackha=-0.026513d
+set trackdec=-0.015194d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.026501d
+set trackdec=-0.015204d
+get ra
+get dec
+set trackha=-0.026489d
+set trackdec=-0.015214d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.009443d
+set trackdec=-0.015225d
+get ra
+get dec
+set trackha=-0.026466d
+set trackdec=-0.015235d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026454d
+set trackdec=-0.015245d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.009467d
+set trackdec=-0.015255d
+get ra
+get dec
+set trackha=-0.026431d
+set trackdec=-0.015266d
+get ra
+get dec
+set trackha=-0.026419d
+set trackdec=-0.015276d
+get ra
+get dec
+set trackha=-0.026407d
+set trackdec=-0.015287d
+get ra
+get dec
+set trackha=-0.009593d
+set trackdec=-0.015297d
+get ra
+get dec
+set trackha=-0.026384d
+set trackdec=-0.015307d
+get ra
+get dec
+set trackha=-0.026372d
+set trackdec=-0.015318d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026360d
+set trackdec=-0.015328d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.009630d
+set trackdec=-0.015338d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026337d
+set trackdec=-0.015348d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026325d
+set trackdec=-0.015359d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026314d
+set trackdec=-0.015369d
+get flag[1]
+get ra
+get dec
+set trackha=-0.009622d
+set trackdec=-0.015380d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026290d
+set trackdec=-0.015390d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026278d
+set trackdec=-0.015400d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026267d
+set trackdec=-0.015411d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026255d
+set trackdec=-0.015421d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008431d
+set trackdec=-0.015431d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026232d
+set trackdec=-0.015442d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026220d
+set trackdec=-0.015452d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026209d
+set trackdec=-0.015462d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008770d
+set trackdec=-0.015473d
+get ra
+get dec
+set trackha=-0.026186d
+set trackdec=-0.015483d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.026174d
+set trackdec=-0.015493d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026162d
+set trackdec=-0.015504d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008777d
+set trackdec=-0.015514d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026139d
+set trackdec=-0.015524d
+get ra
+get dec
+set trackha=-0.026128d
+set trackdec=-0.015535d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.026116d
+set trackdec=-0.015545d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008141d
+set trackdec=-0.015555d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026093d
+set trackdec=-0.015566d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026081d
+set trackdec=-0.015576d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026070d
+set trackdec=-0.015586d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008468d
+set trackdec=-0.015597d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026046d
+set trackdec=-0.015607d
+get ra
+get flag[1]
+get dec
+set trackha=-0.026035d
+set trackdec=-0.015617d
+get flag[1]
+get ra
+get dec
+set trackha=-0.026023d
+set trackdec=-0.015628d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008681d
+set trackdec=-0.015638d
+get ra
+get dec
+set trackha=-0.026000d
+set trackdec=-0.015648d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025989d
+set trackdec=-0.015659d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025977d
+set trackdec=-0.015669d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.008850d
+set trackdec=-0.015679d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025954d
+set trackdec=-0.015690d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025943d
+set trackdec=-0.015700d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025931d
+set trackdec=-0.015711d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025920d
+set trackdec=-0.015721d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007985d
+set trackdec=-0.015731d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025897d
+set trackdec=-0.015741d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025885d
+set trackdec=-0.015752d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025874d
+set trackdec=-0.015762d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008164d
+set trackdec=-0.015772d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025851d
+set trackdec=-0.015783d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025839d
+set trackdec=-0.015793d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025828d
+set trackdec=-0.015803d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008560d
+set trackdec=-0.015814d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025805d
+set trackdec=-0.015824d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025793d
+set trackdec=-0.015835d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025782d
+set trackdec=-0.015845d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008060d
+set trackdec=-0.015855d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025759d
+set trackdec=-0.015866d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025748d
+set trackdec=-0.015876d
+get ra
+get dec
+set trackha=-0.025736d
+set trackdec=-0.015886d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.025725d
+set trackdec=-0.015897d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007983d
+set trackdec=-0.015907d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025702d
+set trackdec=-0.015917d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025691d
+set trackdec=-0.015928d
+get ra
+get dec
+set trackha=-0.025679d
+set trackdec=-0.015938d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.007588d
+set trackdec=-0.015948d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025656d
+set trackdec=-0.015959d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025645d
+set trackdec=-0.015969d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025634d
+set trackdec=-0.015980d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008152d
+set trackdec=-0.015990d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025611d
+set trackdec=-0.016000d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025600d
+set trackdec=-0.016010d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025588d
+set trackdec=-0.016021d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008696d
+set trackdec=-0.016031d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025566d
+set trackdec=-0.016042d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025554d
+set trackdec=-0.016052d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025543d
+set trackdec=-0.016062d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025532d
+set trackdec=-0.016073d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007430d
+set trackdec=-0.016083d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025509d
+set trackdec=-0.016093d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025498d
+set trackdec=-0.016104d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025487d
+set trackdec=-0.016114d
+get ra
+get dec
+get flag[1]
+set trackha=-0.007934d
+set trackdec=-0.016124do
+get flag[1]
+get ra
+get dec
+set trackha=-0.025464d
+set trackdec=-0.016135d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025453d
+set trackdec=-0.016145d
+get ra
+get dec
+set trackha=-0.025441d
+set trackdec=-0.016155d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008214d
+set trackdec=-0.016166d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025419d
+set trackdec=-0.016176d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025408d
+set trackdec=-0.016186d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025396d
+set trackdec=-0.016197d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025385d
+set trackdec=-0.016207d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007457d
+set trackdec=-0.016218d
+get ra
+get dec
+set trackha=-0.025363d
+set trackdec=-0.016228d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.025352d
+set trackdec=-0.016238d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025340d
+set trackdec=-0.016249d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007733d
+set trackdec=-0.016259d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025318d
+set trackdec=-0.016269d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025307d
+set trackdec=-0.016280d
+get flag[1]
+get ra
+get dec
+set trackha=-0.008451d
+set trackdec=-0.016290d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025284d
+set trackdec=-0.016300d3
+get flag[1]
+get ra
+get dec
+set trackha=-0.025273d
+set trackdec=-0.016311d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025262d
+set trackdec=-0.016321d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025251d
+set trackdec=-0.016332d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007331d
+set trackdec=-0.016342d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025228d
+set trackdec=-0.016352d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025217d
+set trackdec=-0.016363d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025206d
+set trackdec=-0.016373d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025195d
+set trackdec=-0.016383d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025184d
+set trackdec=-0.016394d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025173d
+set trackdec=-0.016404d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025162d
+set trackdec=-0.016415d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025150d
+set trackdec=-0.016425d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025139d
+set trackdec=-0.016435d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025128d
+set trackdec=-0.016446d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025117d
+set trackdec=-0.016456d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025106d
+set trackdec=-0.016466d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025095d
+set trackdec=-0.016477d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025084d
+set trackdec=-0.016487d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025073d
+set trackdec=-0.016498d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025062d
+set trackdec=-0.016508d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025051d
+set trackdec=-0.016518d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025040d
+set trackdec=-0.016529d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025029d
+set trackdec=-0.016539d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025017d
+set trackdec=-0.016549d
+get flag[1]
+get ra
+get dec
+set trackha=-0.025006d
+set trackdec=-0.016560d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024995d
+set trackdec=-0.016570d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024984d
+set trackdec=-0.016581d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024973d
+set trackdec=-0.016591d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024962d
+set trackdec=-0.016601d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024951d
+set trackdec=-0.016612d
+get flag[1]
+get ra
+get dec
+set trackha=0.024733d
+set trackdec=-0.016622d
+get flag[1]
+get ra
+get dec
+set trackha=0.013235d
+set trackdec=-0.016633d
+get flag[1]
+get ra
+get dec
+set trackha=0.000746d
+set trackdec=-0.016643d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007280d
+set trackdec=-0.016653d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024896d
+set trackdec=-0.016664d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024885d
+set trackdec=-0.016674d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024874d
+set trackdec=-0.016684d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024863d
+set trackdec=-0.016695d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007915d
+set trackdec=-0.016705d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024841d
+set trackdec=-0.016716d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024831d
+set trackdec=-0.016726d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024820d
+set trackdec=-0.016736d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024809d
+set trackdec=-0.016747d
+get flag[1]
+get ra
+get dec
+set trackha=-0.006614d
+set trackdec=-0.016757d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024787d
+set trackdec=-0.016767d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024776d
+set trackdec=-0.016778d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024765d
+set trackdec=-0.016788d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007251d
+set trackdec=-0.016799d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024743d
+set trackdec=-0.016809d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024732d
+set trackdec=-0.016819d
+get flag[1]
+get ra
+get dec
+set trackha=-0.024721d
+set trackdec=-0.016830d
+get flag[1]
+get ra
+get dec
+set trackha=-0.007577d
+set trackdec=-0.016840d
+get ra
+get dec
+set trackha=-0.024700d
+set trackdec=-0.016851d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.024689d
+set trackdec=-0.016861d
+get ra
+get dec
+set trackha=-0.024678d
+set trackdec=-0.016871d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.007608d
+set trackdec=-0.016882d
+stop
+stop north
+stop south
+stop east
+stop west
+set trackha=0.000000d
+set trackdec=0.000000d
+stop north
+stop east
+get x_topspeed
+set speed=4.000000d
+stop
+stop north
+stop south
+stop east
+stop west
+stop
+stop north
+stop south
+stop east
+stop west
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get x_topspeed
+get flag[1]
+get flag[1]
+get flag[1]
+get ra
+get dec
+get x_topspeed
+get x_topspeed
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set objectdec=-2.495831d
+set objectra=0.06873052h
+goto
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get flag[1]
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get flag[1]
+get alt
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get ra
+get dec
+get ha
+get alt
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+get flag[1]
+set speed=0.000000d
+move north
+move east
+get ra
+get dec
+set trackha=-0.086437d
+set trackdec=-0.188349d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.113997d
+set trackdec=-0.221281d
+get ra
+get dec
+get flag[1]
+set trackha=-0.113265d
+set trackdec=-0.245268d
+get flag[1]
+get ra
+get dec
+set trackha=-0.095722d
+set trackdec=-0.244062d
+get ra
+get dec
+set trackha=-0.111791d
+set trackdec=-0.242872d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.111067d
+set trackdec=-0.241683d
+get flag[1]
+get ra
+get dec
+set trackha=-0.110351d
+set trackdec=-0.221286d
+get flag[1]
+get ra
+get dec
+set trackha=-0.109638d
+set trackdec=-0.239309d
+get flag[1]
+get ra
+get dec
+set trackha=-0.090506d
+set trackdec=-0.238141d
+get flag[1]
+get ra
+get dec
+set trackha=-0.108233d
+set trackdec=-0.236944d
+get flag[1]
+get ra
+get dec
+set trackha=-0.107539d
+set trackdec=-0.235764d
+get ra
+get dec
+set trackha=-0.106850d
+set trackdec=-0.234585d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.089381d
+set trackdec=-0.233409d
+get ra
+get dec
+set trackha=-0.105488d
+set trackdec=-0.232236d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.104815d
+set trackdec=-0.231064d
+get flag[1]
+get ra
+get dec
+set trackha=-0.104149d
+set trackdec=-0.229896d
+get flag[1]
+get ra
+get dec
+set trackha=-0.086667d
+set trackdec=-0.228731d
+get ra
+get dec
+get flag[1]
+set trackha=-0.102831d
+set trackdec=-0.227570d
+get flag[1]
+get ra
+get dec
+set trackha=-0.102181d
+set trackdec=-0.226413d
+get ra
+get dec
+set trackha=-0.101535d
+set trackdec=-0.225257d
+get flag[1]
+get ra
+get dec
+set trackha=-0.100894d
+set trackdec=-0.224105d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.082464d
+set trackdec=-0.222957d
+get ra
+get dec
+set trackha=-0.099629d
+set trackdec=-0.221813d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.099013d
+set trackdec=-0.220689d
+get ra
+get dec
+get flag[1]
+set trackha=-0.098385d
+set trackdec=-0.219538d
+get ra
+get dec
+get flag[1]
+set trackha=-0.080113d
+set trackdec=-0.218405d
+get ra
+get dec
+get flag[1]
+set trackha=-0.097167d
+set trackdec=-0.217290d
+get flag[1]
+get ra
+get dec
+set trackha=-0.078734d
+set trackdec=-0.216152d
+get flag[1]
+get ra
+get dec
+set trackha=-0.095953d
+set trackdec=-0.215032d
+get flag[1]
+get ra
+get dec
+set trackha=-0.095357d
+set trackdec=-0.213917d
+get ra
+get dec
+get flag[1]
+set trackha=-0.094769d
+set trackdec=-0.212811d
+get ra
+get dec
+get flag[1]
+set trackha=-0.094183d
+set trackdec=-0.211705d
+get ra
+get dec
+get flag[1]
+set trackha=-0.093607d
+set trackdec=-0.210614d
+get flag[1]
+get ra
+get dec
+set trackha=-0.073225d
+set trackdec=-0.209501d
+get flag[1]
+get ra
+get dec
+set trackha=-0.092449d
+set trackdec=-0.208409d
+get flag[1]
+get ra
+get dec
+set trackha=-0.091881d
+set trackdec=-0.207321d
+get ra
+get dec
+get flag[1]
+set trackha=-0.091318d
+set trackdec=-0.206240d
+get ra
+get dec
+get flag[1]
+set trackha=-0.090759d
+set trackdec=-0.205161d
+get ra
+get dec
+get flag[1]
+set trackha=-0.090204d
+set trackdec=-0.204089d
+get flag[1]
+get ra
+get dec
+set trackha=-0.068595d
+set trackdec=-0.203022d
+get flag[1]
+get ra
+get dec
+set trackha=-0.072378d
+set trackdec=-0.201960d
+get flag[1]
+get ra
+get dec
+set trackha=-0.088566d
+set trackdec=-0.200903d
+get flag[1]
+get ra
+get dec
+set trackha=-0.088029d
+set trackdec=-0.199851d
+get flag[1]
+get ra
+get dec
+set trackha=-0.087496d
+set trackdec=-0.198804d
+get flag[1]
+get ra
+get dec
+set trackha=-0.086967d
+set trackdec=-0.197763d
+get flag[1]
+get ra
+get dec
+set trackha=-0.086443d
+set trackdec=-0.196730d
+get flag[1]
+get ra
+get dec
+set trackha=-0.068145d
+set trackdec=-0.195699d
+get flag[1]
+get ra
+get dec
+set trackha=-0.085405d
+set trackdec=-0.194674d
+get ra
+get dec
+get flag[1]
+set trackha=-0.084892d
+set trackdec=-0.193654d
+get ra
+get dec
+get flag[1]
+set trackha=-0.084383d
+set trackdec=-0.192640d
+get flag[1]
+get ra
+get dec
+set trackha=-0.066746d
+set trackdec=-0.191631d
+get flag[1]
+get ra
+get dec
+set trackha=-0.083377d
+set trackdec=-0.190628d
+get ra
+get dec
+get flag[1]
+set trackha=-0.082880d
+set trackdec=-0.189632d
+get ra
+get dec
+get flag[1]
+set trackha=-0.082386d
+set trackdec=-0.188640d
+get flag[1]
+get ra
+get dec
+set trackha=-0.065190d
+set trackdec=-0.187654d
+get flag[1]
+get ra
+get dec
+set trackha=-0.081411d
+set trackdec=-0.186673d
+get ra
+get dec
+set trackha=-0.080936d
+set trackdec=-0.185712d
+get flag[1]
+get ra
+get dec
+set trackha=-0.080452d
+set trackdec=-0.184732d
+get flag[1]
+get ra
+get dec
+set trackha=-0.079977d
+set trackdec=-0.183768d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.061687d
+set trackdec=-0.182810d
+get ra
+get flag[1]
+get dec
+set trackha=-0.079038d
+set trackdec=-0.181858d
+get ra
+get dec
+get flag[1]
+set trackha=-0.078578d
+set trackdec=-0.180920d
+get ra
+get flag[1]
+get dec
+set trackha=-0.078118d
+set trackdec=-0.179981d
+get flag[1]
+get ra
+get dec
+set trackha=-0.057921d
+set trackdec=-0.179039d
+get ra
+get dec
+get flag[1]
+set trackha=-0.077204d
+set trackdec=-0.178110d
+get flag[1]
+get ra
+get dec
+set trackha=-0.076754d
+set trackdec=-0.177186d
+get ra
+get dec
+get flag[1]
+set trackha=-0.076307d
+set trackdec=-0.176268d
+get flag[1]
+get ra
+get dec
+set trackha=-0.075868d
+set trackdec=-0.175365d
+get ra
+get dec
+get flag[1]
+set trackha=-0.058265d
+set trackdec=-0.174454d
+get ra
+get dec
+get flag[1]
+set trackha=-0.074988d
+set trackdec=-0.173552d
+get ra
+get dec
+get flag[1]
+set trackha=-0.074557d
+set trackdec=-0.172661d
+get ra
+get dec
+get flag[1]
+set trackha=-0.074126d
+set trackdec=-0.171771d
+get ra
+get dec
+get flag[1]
+set trackha=-0.056908d
+set trackdec=-0.170888d
+get ra
+get dec
+get flag[1]
+set trackha=-0.073280d
+set trackdec=-0.170020d
+get ra
+get dec
+get flag[1]
+set trackha=-0.072859d
+set trackdec=-0.169147d
+get ra
+get dec
+get flag[1]
+set trackha=-0.072436d
+set trackdec=-0.168271d
+get ra
+get dec
+get flag[1]
+set trackha=-0.072022d
+set trackdec=-0.167410d
+get ra
+get flag[1]
+get dec
+set trackha=-0.053961d
+set trackdec=-0.148613d
+get ra
+get dec
+get flag[1]
+set trackha=-0.071203d
+set trackdec=-0.165709d
+get ra
+get dec
+get flag[1]
+set trackha=-0.070798d
+set trackdec=-0.164865d
+get flag[1]
+get ra
+get dec
+set trackha=-0.052098d
+set trackdec=-0.164028d
+get flag[1]
+get ra
+get dec
+set trackha=-0.069997d
+set trackdec=-0.163196d
+get flag[1]
+get ra
+get dec
+set trackha=-0.069601d
+set trackdec=-0.162369d
+get flag[1]
+get ra
+get dec
+set trackha=-0.069207d
+set trackdec=-0.161548d
+get flag[1]
+get ra
+get dec
+set trackha=-0.051364d
+set trackdec=-0.160733d
+get flag[1]
+get ra
+get dec
+set trackha=-0.068429d
+set trackdec=-0.159923d
+get flag[1]
+get ra
+get dec
+set trackha=-0.068044d
+set trackdec=-0.159119d
+get ra
+get dec
+get flag[1]
+set trackha=-0.067663d
+set trackdec=-0.158321d
+get ra
+get dec
+get flag[1]
+set trackha=-0.050398d
+set trackdec=-0.157527d
+get ra
+get dec
+get flag[1]
+set trackha=-0.066906d
+set trackdec=-0.156739d
+get ra
+get dec
+get flag[1]
+set trackha=-0.066533d
+set trackdec=-0.155957d
+get flag[1]
+get ra
+get dec
+set trackha=-0.066162d
+set trackdec=-0.155179d
+get flag[1]
+get ra
+get dec
+set trackha=-0.065795d
+set trackdec=-0.154412d
+get ra
+get dec
+get flag[1]
+set trackha=-0.047470d
+set trackdec=-0.153642d
+get ra
+get dec
+get flag[1]
+set trackha=-0.065065d
+set trackdec=-0.152882d
+get ra
+get dec
+get flag[1]
+set trackha=-0.064706d
+set trackdec=-0.152130d
+get flag[1]
+get ra
+get dec
+set trackha=-0.064348d
+set trackdec=-0.151379d
+get ra
+get dec
+get flag[1]
+set trackha=-0.046651d
+set trackdec=-0.150633d
+get ra
+get dec
+get flag[1]
+set trackha=-0.063639d
+set trackdec=-0.149893d
+get flag[1]
+get ra
+get dec
+set trackha=-0.063288d
+set trackdec=-0.149158d
+get flag[1]
+get ra
+get dec
+set trackha=-0.045094d
+set trackdec=-0.148429d
+get flag[1]
+get ra
+get dec
+set trackha=-0.062595d
+set trackdec=-0.147704d
+get flag[1]
+get ra
+get dec
+set trackha=-0.062252d
+set trackdec=-0.146985d
+get flag[1]
+get ra
+get dec
+set trackha=-0.061912d
+set trackdec=-0.146272d
+get flag[1]
+get ra
+get dec
+set trackha=-0.044461d
+set trackdec=-0.145563d
+get flag[1]
+get ra
+get dec
+set trackha=-0.061238d
+set trackdec=-0.144860d
+get flag[1]
+get ra
+get dec
+set trackha=-0.060905d
+set trackdec=-0.144160d
+get flag[1]
+get ra
+get dec
+set trackha=-0.060574d
+set trackdec=-0.143467d
+get ra
+get dec
+get flag[1]
+set trackha=-0.060245d
+set trackdec=-0.142777d
+get ra
+get dec
+set trackha=-0.059918d
+set trackdec=-0.142093d
+get flag[1]
+get ra
+get dec
+set trackha=-0.042320d
+set trackdec=-0.141415d
+get flag[1]
+get flag[1]
+get ra
+get dec
+set trackha=-0.059273d
+set trackdec=-0.140741d
+get ra
+get dec
+get flag[1]
+set trackha=-0.058957d
+set trackdec=-0.140081d
+get ra
+get dec
+get flag[1]
+set trackha=-0.058640d
+set trackdec=-0.139416d
+get ra
+get dec
+get flag[1]
+set trackha=-0.058321d
+set trackdec=-0.138750d
+get ra
+get dec
+get flag[1]
+set trackha=-0.040045d
+set trackdec=-0.138095d
+get ra
+get dec
+get flag[1]
+set trackha=-0.040875d
+set trackdec=-0.137445d
+get flag[1]
+get ra
+get dec
+set trackha=-0.057388d
+set trackdec=-0.136799d
+get ra
+get dec
+get flag[1]
+set trackha=-0.057081d
+set trackdec=-0.136159d
+get ra
+get dec
+get flag[1]
+set trackha=-0.056781d
+set trackdec=-0.135532d
+get flag[1]
+get ra
+get dec
+set trackha=-0.056475d
+set trackdec=-0.134892d
+get ra
+get dec
+get flag[1]
+set trackha=-0.039234d
+set trackdec=-0.134274d
+get ra
+get dec
+get flag[1]
+set trackha=-0.055880d
+set trackdec=-0.133652d
+get flag[1]
+get ra
+get dec
+set trackha=-0.055580d
+set trackdec=-0.133026d
+get ra
+get dec
+get flag[1]
+set trackha=-0.055287d
+set trackdec=-0.132416d
+get ra
+get dec
+get flag[1]
+set trackha=-0.054994d
+set trackdec=-0.131807d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036818d
+set trackdec=-0.131203d
+get ra
+get dec
+get flag[1]
+set trackha=-0.054417d
+set trackdec=-0.130606d
+get ra
+get dec
+get flag[1]
+set trackha=-0.054129d
+set trackdec=-0.130007d
+get ra
+get dec
+get flag[1]
+set trackha=-0.053844d
+set trackdec=-0.129414d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036445d
+set trackdec=-0.128828d
+get ra
+get dec
+get flag[1]
+set trackha=-0.053281d
+set trackdec=-0.128246d
+get ra
+get dec
+get flag[1]
+set trackha=-0.053001d
+set trackdec=-0.127667d
+get ra
+get dec
+get flag[1]
+set trackha=-0.052724d
+set trackdec=-0.127093d
+get ra
+get dec
+get flag[1]
+set trackha=-0.035374d
+set trackdec=-0.126532d
+get ra
+get dec
+get flag[1]
+set trackha=-0.052176d
+set trackdec=-0.125958d
+get ra
+get dec
+get flag[1]
+set trackha=-0.051904d
+set trackdec=-0.125397d
+get ra
+get dec
+get flag[1]
+set trackha=-0.051639d
+set trackdec=-0.124849d
+get ra
+get dec
+get flag[1]
+set trackha=-0.051367d
+set trackdec=-0.124287d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033262d
+set trackdec=-0.123739d
+get ra
+get dec
+get flag[1]
+set trackha=-0.050837d
+set trackdec=-0.123194d
+get ra
+get dec
+get flag[1]
+set trackha=-0.050574d
+set trackdec=-0.122653d
+get ra
+get dec
+get flag[1]
+set trackha=-0.050317d
+set trackdec=-0.122124d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032493d
+set trackdec=-0.121591d
+get ra
+get dec
+get flag[1]
+set trackha=-0.049796d
+set trackdec=-0.121053d
+get ra
+get dec
+get flag[1]
+set trackha=-0.049544d
+set trackdec=-0.120536d
+get ra
+get dec
+get flag[1]
+set trackha=-0.049290d
+set trackdec=-0.120014d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032219d
+set trackdec=-0.119490d
+get ra
+get dec
+set trackha=-0.048783d
+set trackdec=-0.118976d
+get flag[1]
+get ra
+get dec
+set trackha=-0.048534d
+set trackdec=-0.118466d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.048286d
+set trackdec=-0.117960d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031120d
+set trackdec=-0.117457d
+get ra
+get dec
+get flag[1]
+set trackha=-0.047795d
+set trackdec=-0.116958d
+get ra
+get dec
+get flag[1]
+set trackha=-0.047552d
+set trackdec=-0.116463d
+get ra
+get dec
+set trackha=-0.047314d
+set trackdec=-0.115978d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.030027d
+set trackdec=-0.115490d
+get ra
+get dec
+get flag[1]
+set trackha=-0.046832d
+set trackdec=-0.115000d
+get ra
+get dec
+get flag[1]
+set trackha=-0.046596d
+set trackdec=-0.114519d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029345d
+set trackdec=-0.114043d
+get ra
+get dec
+set trackha=-0.046127d
+set trackdec=-0.113569d
+get ra
+get dec
+set trackha=-0.045894d
+set trackdec=-0.113099d
+get ra
+get dec
+set trackha=-0.045663d
+set trackdec=-0.112631d
+get ra
+get dec
+set trackha=-0.028270d
+set trackdec=-0.112167d
+get ra
+get dec
+set trackha=-0.045205d
+set trackdec=-0.111707d
+get ra
+get dec
+set trackha=-0.044978d
+set trackdec=-0.111250d
+get ra
+get dec
+set trackha=-0.044753d
+set trackdec=-0.110797d
+get ra
+get dec
+set trackha=-0.027423d
+set trackdec=-0.110353d
+get ra
+get dec
+set trackha=-0.044310d
+set trackdec=-0.109906d
+get ra
+get dec
+set trackha=-0.044086d
+set trackdec=-0.109457d
+get ra
+get dec
+set trackha=-0.043866d
+set trackdec=-0.109016d
+get ra
+get dec
+set trackha=-0.043647d
+set trackdec=-0.108579d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.025395d
+set trackdec=-0.108146d
+get ra
+get dec
+get flag[1]
+set trackha=-0.043215d
+set trackdec=-0.107716d
+get ra
+get dec
+get flag[1]
+set trackha=-0.043000d
+set trackdec=-0.107288d
+get ra
+get dec
+get flag[1]
+set trackha=-0.042790d
+set trackdec=-0.106869d
+get ra
+get dec
+get flag[1]
+set trackha=-0.024739d
+set trackdec=-0.106448d
+get ra
+get dec
+get flag[1]
+set trackha=-0.042364d
+set trackdec=-0.106023d
+get ra
+get dec
+set trackha=-0.042155d
+set trackdec=-0.105608d
+get ra
+get dec
+set trackha=-0.041947d
+set trackdec=-0.105196d
+get ra
+get dec
+set trackha=-0.024422d
+set trackdec=-0.104793d
+get ra
+get dec
+set trackha=-0.041535d
+set trackdec=-0.104381d
+get ra
+get dec
+set trackha=-0.041331d
+set trackdec=-0.103978d
+get ra
+get dec
+set trackha=-0.041128d
+set trackdec=-0.103577d
+get ra
+get dec
+set trackha=-0.040926d
+set trackdec=-0.123241d
+get ra
+get dec
+set trackha=-0.111792d
+set trackdec=-0.148385d
+get ra
+get dec
+set trackha=-0.207250d
+set trackdec=-0.136884d
+get ra
+get dec
+set trackha=-0.159714d
+set trackdec=-0.124296d
+get ra
+get dec
+set trackha=-0.115737d
+set trackdec=-0.101619d
+get ra
+get dec
+set trackha=0.000341d
+set trackdec=-0.101238d
+get ra
+get dec
+set trackha=0.020314d
+set trackdec=-0.100855d
+get ra
+get dec
+set trackha=0.003025d
+set trackdec=-0.100483d
+get ra
+get dec
+set trackha=-0.012187d
+set trackdec=-0.100108d
+get ra
+get dec
+set trackha=-0.022391d
+set trackdec=-0.099730d
+get ra
+get dec
+set trackha=-0.038973d
+set trackdec=-0.099366d
+get ra
+get dec
+set trackha=-0.038784d
+set trackdec=-0.098999d
+get ra
+get dec
+set trackha=-0.017865d
+set trackdec=-0.098630d
+get ra
+get dec
+set trackha=0.012652d
+set trackdec=-0.098269d
+get ra
+get dec
+set trackha=0.002864d
+set trackdec=-0.097915d
+get ra
+get dec
+set trackha=-0.009993d
+set trackdec=-0.097554d
+get ra
+get dec
+set trackha=0.025000d
+set trackdec=-0.097200d
+get ra
+get dec
+set trackha=0.048133d
+set trackdec=-0.096849d
+get ra
+get dec
+set trackha=0.021846d
+set trackdec=-0.040599d
+get ra
+get dec
+set trackha=0.000700d
+set trackdec=-0.056541d
+get ra
+get dec
+get flag[1]
+set trackha=-0.013128d
+set trackdec=-0.069559d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036946d
+set trackdec=-0.095470d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036768d
+set trackdec=-0.095131d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036591d
+set trackdec=-0.094795d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036415d
+set trackdec=-0.094462d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036240d
+set trackdec=-0.094130d
+get ra
+get dec
+get flag[1]
+set trackha=-0.036066d
+set trackdec=-0.093802d
+get ra
+get dec
+get flag[1]
+set trackha=-0.035893d
+set trackdec=-0.093475d
+get ra
+get dec
+get flag[1]
+set trackha=-0.035721d
+set trackdec=-0.093151d
+get ra
+get dec
+get flag[1]
+set trackha=-0.035549d
+set trackdec=-0.092830d
+get ra
+get dec
+get flag[1]
+set trackha=-0.035379d
+set trackdec=-0.092511d
+get ra
+get dec
+set trackha=-0.035209d
+set trackdec=-0.092194d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.035040d
+set trackdec=-0.091880d
+get ra
+get dec
+get flag[1]
+set trackha=-0.034873d
+set trackdec=-0.091568d
+get ra
+get flag[1]
+get dec
+set trackha=-0.034706d
+set trackdec=-0.091258d
+get ra
+get dec
+get flag[1]
+set trackha=-0.034539d
+set trackdec=-0.090949d
+get ra
+get dec
+get flag[1]
+set trackha=-0.034374d
+set trackdec=-0.090646d
+get ra
+get dec
+get flag[1]
+set trackha=-0.034211d
+set trackdec=-0.090346d
+get ra
+get dec
+get flag[1]
+set trackha=-0.034048d
+set trackdec=-0.090046d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033885d
+set trackdec=-0.089748d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033723d
+set trackdec=-0.089452d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033561d
+set trackdec=-0.089159d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033400d
+set trackdec=-0.088867d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033241d
+set trackdec=-0.088578d
+get ra
+get dec
+get flag[1]
+set trackha=-0.033082d
+set trackdec=-0.088292d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032923d
+set trackdec=-0.088008d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032765d
+set trackdec=-0.087726d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032607d
+set trackdec=-0.087446d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032451d
+set trackdec=-0.087169d
+get ra
+get dec
+get flag[1]
+set trackha=-0.032295d
+set trackdec=-0.086895d
+get ra
+get dec
+set trackha=-0.032139d
+set trackdec=-0.086623d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.031984d
+set trackdec=-0.086352d
+get ra
+get dec
+set trackha=-0.031830d
+set trackdec=-0.086087d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.031676d
+set trackdec=-0.085821d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031520d
+set trackdec=-0.085556d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031368d
+set trackdec=-0.085299d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031215d
+set trackdec=-0.085042d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031062d
+set trackdec=-0.084787d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030909d
+set trackdec=-0.084536d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030758d
+set trackdec=-0.084291d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030606d
+set trackdec=-0.084047d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030453d
+set trackdec=-0.083805d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030300d
+set trackdec=-0.083567d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030147d
+set trackdec=-0.083333d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029994d
+set trackdec=-0.083104d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029840d
+set trackdec=-0.082879d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029686d
+set trackdec=-0.082659d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029529d
+set trackdec=-0.082444d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029373d
+set trackdec=-0.082236d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029210d
+set trackdec=-0.082029d
+get ra
+get dec
+get flag[1]
+set trackha=-0.029050d
+set trackdec=-0.081836d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028886d
+set trackdec=-0.081649d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028718d
+set trackdec=-0.081474d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028547d
+set trackdec=-0.081310d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028369d
+set trackdec=-0.081159d
+get ra
+get dec
+get flag[1]
+set trackha=-0.028184d
+set trackdec=-0.081026d
+get ra
+get dec
+get flag[1]
+set trackha=-0.027989d
+set trackdec=-0.080912d
+get ra
+get dec
+get flag[1]
+set trackha=-0.027784d
+set trackdec=-0.080825d
+get ra
+get dec
+get flag[1]
+set trackha=-0.027562d
+set trackdec=-0.080771d
+get ra
+get dec
+get flag[1]
+set trackha=-0.027323d
+set trackdec=-0.080760d
+get ra
+get dec
+get flag[1]
+set trackha=-0.027056d
+set trackdec=-0.080804d
+get ra
+get dec
+get flag[1]
+set trackha=-0.026750d
+set trackdec=-0.080926d
+get ra
+get dec
+get flag[1]
+set trackha=-0.026398d
+set trackdec=-0.081151d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025965d
+set trackdec=-0.081533d
+get ra
+get dec
+get flag[1]
+set trackha=-0.025422d
+set trackdec=-0.082140d
+get ra
+get flag[1]
+get dec
+set trackha=-0.024696d
+set trackdec=-0.083111d
+get ra
+get dec
+get flag[1]
+set trackha=-0.023671d
+set trackdec=-0.084684d
+get ra
+get dec
+get flag[1]
+set trackha=-0.022065d
+set trackdec=-0.087406d
+get ra
+get dec
+get flag[1]
+set trackha=-0.019346d
+set trackdec=-0.092352d
+get ra
+get dec
+get flag[1]
+set trackha=-0.013932d
+set trackdec=-0.102654d
+get ra
+get dec
+get flag[1]
+set trackha=-0.000182d
+set trackdec=-0.129495d
+get ra
+get dec
+get flag[1]
+set trackha=0.060466d
+set trackdec=-0.248964d
+get ra
+get dec
+get flag[1]
+set trackha=-1.497683d
+set trackdec=2.968314d
+get ra
+get dec
+get flag[1]
+set trackha=1.016423d
+set trackdec=-2.244074d
+get ra
+get dec
+get flag[1]
+set trackha=0.034855d
+set trackdec=-0.198567d
+get ra
+get dec
+get flag[1]
+set trackha=-0.004218d
+set trackdec=-0.119541d
+get ra
+get dec
+get flag[1]
+set trackha=-0.014751d
+set trackdec=-0.097973d
+get ra
+get dec
+get flag[1]
+set trackha=-0.018970d
+set trackdec=-0.089083d
+get ra
+get dec
+get flag[1]
+set trackha=-0.021095d
+set trackdec=-0.084386d
+get ra
+get dec
+get flag[1]
+set trackha=-0.022259d
+set trackdec=-0.081619d
+get ra
+get dec
+set trackha=-0.022942d
+set trackdec=-0.079818d
+get flag[1]
+get ra
+get dec
+set trackha=-0.023360d
+set trackdec=-0.078548d
+get ra
+get dec
+set trackha=-0.023614d
+set trackdec=-0.077610d
+get ra
+get dec
+set trackha=-0.023763d
+set trackdec=-0.076881d
+get flag[1]
+get ra
+get flag[1]
+get dec
+set trackha=-0.023841d
+set trackdec=-0.076291d
+get ra
+get dec
+get flag[1]
+set trackha=-0.023866d
+set trackdec=-0.075819d
+get ra
+get dec
+get flag[1]
+set trackha=-0.023854d
+set trackdec=-0.075423d
+get ra
+get dec
+get flag[1]
+set trackha=-0.023812d
+set trackdec=-0.075089d
+get ra
+get flag[1]
+get dec
+set trackha=-0.023742d
+set trackdec=-0.074804d
+get ra
+get dec
+set trackha=-0.023650d
+set trackdec=-0.074572d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.023535d
+set trackdec=-0.074393d
+get ra
+get dec
+set trackha=-0.023389d
+set trackdec=-0.074266d
+get ra
+get dec
+set trackha=-0.023211d
+set trackdec=-0.074212d
+get ra
+get dec
+set trackha=-0.022983d
+set trackdec=-0.074256d
+get ra
+get dec
+get flag[1]
+set trackha=-0.022681d
+set trackdec=-0.074452d
+get ra
+get dec
+get flag[1]
+set trackha=-0.022247d
+set trackdec=-0.074909d
+get ra
+get dec
+get flag[1]
+set trackha=-0.021559d
+set trackdec=-0.075871d
+get ra
+get dec
+get flag[1]
+set trackha=-0.020290d
+set trackdec=-0.077984d
+get ra
+get dec
+get flag[1]
+set trackha=-0.017331d
+set trackdec=-0.083439d
+get ra
+get dec
+get flag[1]
+set trackha=-0.006026d
+set trackdec=-0.105367d
+get ra
+get dec
+get flag[1]
+set trackha=0.871783d
+set trackdec=-1.785952d
+get ra
+get dec
+get flag[1]
+set trackha=-1.013960d
+set trackdec=1.830763d
+get ra
+get dec
+get flag[1]
+set trackha=-0.003490d
+set trackdec=-0.109349d
+get ra
+get dec
+get flag[1]
+set trackha=-0.016135d
+set trackdec=-0.083882d
+get ra
+get dec
+get flag[1]
+set trackha=-0.018979d
+set trackdec=-0.077870d
+get ra
+get dec
+get flag[1]
+set trackha=-0.019883d
+set trackdec=-0.075695d
+get ra
+get dec
+get flag[1]
+set trackha=-0.019954d
+set trackdec=-0.075167d
+get ra
+get dec
+get flag[1]
+set trackha=-0.019232d
+set trackdec=-0.076210d
+get ra
+get dec
+get flag[1]
+set trackha=-0.016383d
+set trackdec=-0.081449d
+get ra
+get dec
+get flag[1]
+set trackha=0.009563d
+set trackdec=-0.132125d
+get ra
+get dec
+get flag[1]
+set trackha=-0.089142d
+set trackdec=0.062668d
+get ra
+get dec
+get flag[1]
+set trackha=-0.004233d
+set trackdec=-0.104338d
+get ra
+get dec
+get flag[1]
+set trackha=-0.015914d
+set trackdec=-0.080904d
+get ra
+get dec
+get flag[1]
+set trackha=-0.015084d
+set trackdec=-0.082152d
+get ra
+get dec
+get flag[1]
+set trackha=0.105157d
+set trackdec=-0.317196d
+get ra
+get dec
+get flag[1]
+set trackha=-0.160161d
+set trackdec=0.202878d
+get ra
+get dec
+get flag[1]
+set trackha=-0.011489d
+set trackdec=-0.088141d
+get ra
+get flag[1]
+get dec
+set trackha=-0.073654d
+set trackdec=0.034560d
+get ra
+get flag[1]
+get dec
+set trackha=0.026095d
+set trackdec=-0.161418d
+get ra
+get dec
+get flag[1]
+set trackha=-0.037433d
+set trackdec=-0.036089d
+get ra
+get dec
+get flag[1]
+set trackha=0.024652d
+set trackdec=-0.157571d
+get ra
+get dec
+get flag[1]
+set trackha=-0.030161d
+set trackdec=-0.049705d
+get ra
+get flag[1]
+get dec
+set trackha=-0.056769d
+set trackdec=0.002807d
+get ra
+get dec
+get flag[1]
+set trackha=0.043665d
+set trackdec=-0.193553d
+get ra
+get dec
+get flag[1]
+set trackha=-0.067759d
+set trackdec=0.024836d
+get ra
+get dec
+get flag[1]
+set trackha=-0.004483d
+set trackdec=-0.098611d
+get ra
+get dec
+get flag[1]
+set trackha=-0.058377d
+set trackdec=0.007200d
+get ra
+get dec
+get flag[1]
+set trackha=-0.000805d
+set trackdec=-0.105161d
+get ra
+get flag[1]
+get dec
+set trackha=0.009780d
+set trackdec=-0.125508d
+get ra
+get flag[1]
+get dec
+set trackha=0.010679d
+set trackdec=-0.126733d
+get ra
+get flag[1]
+get dec
+set trackha=-0.034268d
+set trackdec=-0.038695d
+get ra
+get dec
+get flag[1]
+set trackha=-0.163365d
+set trackdec=0.215299d
+get ra
+get dec
+get flag[1]
+set trackha=-0.111352d
+set trackdec=0.111966d
+get ra
+get dec
+get flag[1]
+set trackha=-0.017771d
+set trackdec=-0.069943d
+get ra
+get dec
+get flag[1]
+set trackha=-0.019479d
+set trackdec=-0.066287d
+get ra
+get flag[1]
+get dec
+set trackha=-0.007124d
+set trackdec=-0.090028d
+get ra
+get flag[1]
+get dec
+set trackha=-0.017405d
+set trackdec=-0.069657d
+get ra
+get dec
+get flag[1]
+set trackha=-0.026255d
+set trackdec=-0.052118d
+get ra
+get dec
+get flag[1]
+set trackha=-0.031560d
+set trackdec=-0.041487d
+get ra
+get dec
+set trackha=-0.001314d
+set trackdec=-0.099994d
+get flag[1]
+get ra
+get dec
+set trackha=-0.039836d
+set trackdec=-0.024798d
+get ra
+get dec
+set trackha=-0.005356d
+set trackdec=-0.091492d
+get ra
+get dec
+set trackha=-0.000198d
+set trackdec=-0.101113d
+get ra
+get dec
+set trackha=-0.055353d
+set trackdec=0.006160d
+get ra
+get dec
+set trackha=-0.006263d
+set trackdec=-0.088764d
+get ra
+get dec
+set trackha=-0.013352d
+set trackdec=-0.074677d
+get flag[1]
+set objectdec=15.300420d
+set objectra=23.09380767h
+goto
+get ra
+get dec
+get flag[1]
+set trackha=-0.010801d
+set trackdec=-0.079290d
+get ra
+get dec
+set trackha=0.041822d
+set trackdec=-0.180443d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.113861d
+set trackdec=0.120355d
+get ra
+get dec
+get flag[1]
+set trackha=-0.005019d
+set trackdec=-0.089595d
+get ra
+get dec
+set trackha=-0.013843d
+set trackdec=-0.072196d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.015421d
+set trackdec=-0.068838d
+get ra
+get dec
+get flag[1]
+set trackha=-0.015677d
+set trackdec=-0.068038d
+get ra
+get dec
+get flag[1]
+set trackha=-0.015288d
+set trackdec=-0.068490d
+get ra
+get dec
+get flag[1]
+set trackha=-0.014040d
+set trackdec=-0.070586d
+get ra
+get dec
+get flag[1]
+set trackha=-0.010661d
+set trackdec=-0.076783d
+get ra
+get dec
+get flag[1]
+set trackha=0.003690d
+set trackdec=-0.104019d
+get ra
+get dec
+get flag[1]
+set trackha=-0.682826d
+set trackdec=1.244735d
+get ra
+get dec
+get flag[1]
+set trackha=0.570085d
+set trackdec=-1.221053d
+get ra
+get dec
+get flag[1]
+set trackha=0.000767d
+set trackdec=-0.097696d
+get ra
+get dec
+set trackha=-0.011102d
+set trackdec=-0.074516d
+get ra
+get dec
+set trackha=-0.014052d
+set trackdec=-0.068547d
+get ra
+get dec
+set trackha=-0.015199d
+set trackdec=-0.066058d
+get flag[1]
+get ra
+get dec
+get flag[1]
+set trackha=-0.015747d
+set trackdec=-0.064717d
+get ra
+get dec
+get flag[1]
+set trackha=-0.016016d
+set trackdec=-0.063919d
+get ra
+get dec
+get flag[1]
+set trackha=-0.016146d
+set trackdec=-0.063387d

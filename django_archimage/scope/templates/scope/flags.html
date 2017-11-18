@@ -1,0 +1,42 @@
+{% load static %}
+{% block content %}
+<h3>Control Flags</h3>
+<div class="checkbox">
+  <label>
+    <input id="toggle-tracking" type="checkbox" data-toggle="toggle">
+    Sidereal Tracking
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input id="toggle-configuration" type="checkbox" data-toggle="toggle" data-on="Equatorial" data-off="Alt-Az" data-offstyle='primary' checked>
+    Mount Configuration
+    <div id="console-event"></div>
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input id="toggle-ieca" type="checkbox" data-toggle="toggle">
+    IECA
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input id="toggle-pec" type="checkbox" data-toggle="toggle">
+    PEC
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input id="toggle-horrizon" type="checkbox" data-toggle="toggle">
+    Horrizon Limit
+  </label>
+</div>
+ <div class="checkbox">
+  <label>
+    <input id="toggle-german" type="checkbox" data-toggle="toggle">
+    German Equatorial
+  </label>
+</div>
+{% endblock %}
+<!--<script src="{% static 'scope/js/archimage/flags.js' %}"></script>-->
