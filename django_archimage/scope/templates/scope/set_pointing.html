@@ -1,0 +1,60 @@
+{% block content %}
+
+<div class="container stretch">
+	<div class="well row">
+
+		<h3>Set Pointing</h3>
+
+		<div class="form-group">
+			<div class="row text-center">
+				<div class="col-xs-10">
+					<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">Coordinate</span>
+						<select class="form-control" id="coordinate-id" name="coordinate">
+							<option value="set_pointing_ra">Righ Ascension</option>
+							<option value="set_pointing_ha">Hour Angle</option>
+							<option value="set_pointing_dec">Declination</option>
+							<option value="set_pointing_az">Azimuth</option>
+							<option value="set_pointing_alt">Altitude</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xs-2"></div>
+			</div>
+			<br/>
+			<div class="row text-center">
+				<div class="col-xs-4">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+					  <input type="text" class="form-control" id="degrees" aria-describedby="basic-addon3">
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Minutes</span>
+					  <input type="text" class="form-control" id="minutes" aria-describedby="basic-addon3">
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Seconds</span>
+					  <input type="text" class="form-control" id="seconds" aria-describedby="basic-addon3">
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="row text-right">
+				<div class="col-xs-4">
+					<div class="input-group">
+						<button class="btn btn-primary " name="submit" type="submit">Set Pointing</button>
+					</div>
+				</div>
+				<div class="col-xs-8"></div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}

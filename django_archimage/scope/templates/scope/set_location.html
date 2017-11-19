@@ -1,0 +1,38 @@
+{% block content %}
+
+<div class="container stretch">
+	<div class="well row">
+
+		<h3>Set Location</h3>
+
+		<div class="form-group">
+			<div class="row text-center">
+				<div class="col-xs-6">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Latitude (North)</span>
+					  <input type="text" class="form-control" id="latitude" aria-describedby="basic-addon3">
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Longitude (East)</span>
+					  <input type="text" class="form-control" id="longitude" aria-describedby="basic-addon3">
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="row text-right">
+				<div class="col-xs-4">
+					<div class="input-group">
+						<button class="btn btn-primary " name="submit" type="submit">Set Location</button>
+					</div>
+				</div>
+				<div class="col-xs-8"></div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}

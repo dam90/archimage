@@ -16,11 +16,10 @@
 				<button type="submit" class="btn btn-primary" onclick="SendCommand('sync',null)">
 				  <span class="glyphicon glyphicon-check"></span> SYNC
 				</button>
-
-			</div>
 		</div>
 		<br/>
-
+		{% include 'scope/set_location.html' %}
+		{% include 'scope/set_pointing.html' %}
 		{% include 'scope/paddle.html' %}
 
 	</div>

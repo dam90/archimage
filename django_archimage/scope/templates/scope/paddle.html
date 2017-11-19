@@ -9,47 +9,50 @@
 
 <div class="container stretch">
 	<div class="well row">
-		<h2>Paddle</h2>
+		<h3>Paddle</h3>
 
-		<h3 id="paddle-speed-header">Speed</h3>
+		<h4 id="paddle-speed-header">Speed</h4>
 
 		<div class="row text-center">
 			<input id="paddle-speed-slider" data-slider-id='paddle-speed-slider' type="text" data-slider-min="0" data-slider-max="4" data-slider-step="0.05" data-slider-value="2" style="width:75%" />
 		</div>
 
-		<h3>Jog</h3>
+		<h4>Jog</h4>
 
 		<div class="row text-center">
+
 			<div class="col-xs-1"></div>
+
 			<div class="col-xs-2">
-			<button id="paddle_north" data-downcommand="move_north" data-upcommand="stop_north" type="submit" class="btn btn-primary">
-			  <span class="glyphicon glyphicon-arrow-up"></span><br/> North
-			</button>
+				<button id="paddle_north" data-downcommand="move_north" data-upcommand="stop_north" type="submit" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-arrow-up"></span><br/> North
+				</button>
 			</div>
 
 			<div class="col-xs-2">
-			<button id="paddle_south" data-downcommand="move_south" data-upcommand="stop_south" type="submit" class="btn btn-primary">
-			  <span class="glyphicon glyphicon-arrow-down"></span><br/> South
-			</button>
+				<button id="paddle_south" data-downcommand="move_south" data-upcommand="stop_south" type="submit" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-arrow-down"></span><br/> South
+				</button>
 			</div>
 
 			<div class="col-xs-2">
-			<button id="paddle_east" data-downcommand="move_east" data-upcommand="stop_east" type="submit" class="btn btn-primary">
-			  <span class="glyphicon glyphicon-arrow-right"></span><br/> East
-			</button>
+				<button id="paddle_east" data-downcommand="move_east" data-upcommand="stop_east" type="submit" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-arrow-right"></span><br/> East
+				</button>
 			</div>
 
 			<div class="col-xs-2">
-			<button id="paddle_west" data-downcommand="move_west" data-upcommand="stop_west" type="submit" class="btn btn-primary">
-			  <span class="glyphicon glyphicon-arrow-left inline-block"></span><br/> West
-			</button>
+				<button id="paddle_west" data-downcommand="move_west" data-upcommand="stop_west" type="submit" class="btn btn-primary">
+				  <span class="glyphicon glyphicon-arrow-left inline-block"></span><br/> West
+				</button>
 			</div>
 
 			<div class="col-xs-2">
-			<button id ="stop" data-downcommand="stop" type="submit" class="btn btn-danger">
-			  <span class="glyphicon glyphicon-exclamation-sign inline-block"></span><br/> STOP!
-			</button>
+				<button id ="stop" data-downcommand="stop" type="submit" class="btn btn-danger">
+				  <span class="glyphicon glyphicon-exclamation-sign inline-block"></span><br/> STOP!
+				</button>
 			</div>
+
 			<div class="col-xs-1"></div>
 
 		</div>
