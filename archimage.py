@@ -1,11 +1,8 @@
 #!python2
 import serial
-import binascii
-import time
-from datetime import datetime
-import threading
 import ephem
-import io, re
+import io, re, random, time, binascii, json
+from datetime import datetime
 
 class archimage():
     def __init__(self,live=True):
@@ -69,6 +66,24 @@ class archimage():
         print "disconnected!"
         return "disconnected!"
 
+    def get_all(self):
+        '''
+        Returns all "get-able" parameters
+        '''
+        data = {
+                'ra': self.get_pointing_ra(),
+                'ha': self.get_pointing_ha(),
+                'dec': self.get_pointing_dec(),
+                'az': self.get_pointing_az(),
+                'alt': self.get_pointing_alt(),
+                'track_ha': self.get_ha_rate(),
+                'track_dec': self.get_dec_rate()
+                }
+
+        print json.dumps(data,indent=4)
+
+        return data
+        
     def sidereal_time(self):
         '''
         Returns the current sidereal time, and set's the scopes sidereal time
@@ -213,7 +228,10 @@ class archimage():
         '''
         command = "get sidereal"
         resp = self.send(command)
-        return hms2dd(resp['payload'])
+        if self.live_comm:
+            return hms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,24.000)
     
     def set_latitude(self,decimal_latitude_degrees):
         command = "set latitude=" + "{:.6f}".format(decimal_latitude_degrees) + "d"
@@ -227,8 +245,8 @@ class archimage():
         resp = self.send(command)
         if self.live_comm:
             return dms2dd(resp['payload'])
-        else: # if this is testing, send back a latitude:
-            return 34.56
+        else:
+            return random.uniform(-90.000,90.000)
 
     '''
     -------------------------
@@ -256,16 +274,26 @@ class archimage():
     def get_pointing_ra(self):
         command = "get ra"
         resp = self.send(command)
-        return hms2dd(resp['payload'])
+        if self.live_comm:
+            return hms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,360.000)
         
     def get_pointing_ha(self):
+        command = "get ha"
         resp = self.send(command)
-        return hms2dd(resp['payload'])
+        if self.live_comm:
+            return hms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,360.000)
     
     def get_pointing_dec(self):
         command = "get dec"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            dms2dd(resp['payload'])
+        else:
+            return random.uniform(-90.000,90.000)
 
     def set_pointing_ha(self,ha_dd):
         '''
@@ -286,12 +314,18 @@ class archimage():
     def get_pointing_az(self):
         command = "get az"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            return dms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,359.999)
     
     def get_pointing_alt(self):
         command = "get alt"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            return dms2dd(resp['payload'])
+        else:
+            return random.uniform(-90.000,90.000)
 
     def set_pointing_az(self,az_dd):
         '''
@@ -342,7 +376,7 @@ class archimage():
         if self.live_comm:
             return float(resp['payload'])
         else:
-            return 2.432
+            return random.uniform(0.000,4.000)
 
     def get_dec_rate(self):
         command = "get trackdec"
@@ -350,7 +384,7 @@ class archimage():
         if self.live_comm:
             return float(resp['payload'])
         else:
-            return 1.2343
+            return random.uniform(0.000,4.000)
 
     def set_ha_rate(self,rate_ds):
         '''

@@ -2,7 +2,7 @@ from django.http import HttpResponse, JsonResponse
 from django import forms
 import archimage
 from test_inspect import describe_class_methods
-import json
+import json, traceback
 
 mount = archimage.archimage(live=False)
 
@@ -43,7 +43,9 @@ def execute(request):
 		else:
 			resp = {"command": command,"arguments": arguments, "response": "command not in command list", "command": command_list}
 
-	except:
+	except Exception, exc:
+		print "[API_EXECUTE_EXCEPTION]: ", exc
+		traceback.print_exc()
 		resp = {"command": command,"arguments": arguments, "response": "error"}
 
 	
