@@ -13,9 +13,10 @@ function SendCommand(command,arguments) {
 };
 
 
-// Dashboard poll
+// Mount Monitor Poll
 (function poll() {
   setTimeout( function() {
+    if ($('#toggle-monitor').prop('checked')){
     $.ajax({
          type:"POST",
          url:"/api/execute/",
@@ -26,32 +27,20 @@ function SendCommand(command,arguments) {
                 },
           dataType: 'json',
           success: function (result) {
-              //alert(JSON.stringify(result)); 
+              // update the display
               $('#pointing_readout').text(JSON.stringify(result.response, null, 4));
-              //$('#pointing_readout').text(JSON.parse(result));
+              // poll again
               poll();
             }
           });
-      }, 1000);
-  })();
+    } else {
+      // poll again
+      $('#pointing_readout').text('Monitoring Disabled');
+      poll();
+    }
+  }, 1000);
+})();
 
-
-// Dashboard
-$(function() {
-  $.ajax({
-         type:"POST",
-         url:"/api/execute/",
-         data: {
-                'command': 'get_all',
-                'args': null,
-                'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value
-                },
-          success: function (result) {
-              //alert(JSON.stringify(result)); 
-              $('#pointing_readout').text(JSON.stringify(result));
-            }
-    });
-});
 
 // Paddle controls: 
 // - commands delivered via data-downcommand and data-upcommand (press and release), 

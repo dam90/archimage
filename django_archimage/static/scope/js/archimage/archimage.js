@@ -12,47 +12,6 @@ function SendCommand(command,arguments) {
     });
 };
 
-
-// Dashboard poll
-(function poll() {
-  setTimeout( function() {
-    $.ajax({
-         type:"POST",
-         url:"/api/execute/",
-         data: {
-                'command': 'get_all',
-                'args': null,
-                'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value
-                },
-          dataType: 'json',
-          success: function (result) {
-              //alert(JSON.stringify(result)); 
-              $('#pointing_readout').text(JSON.stringify(result.response, null, 4));
-              //$('#pointing_readout').text(JSON.parse(result));
-              poll();
-            }
-          });
-      }, 1000);
-  })();
-
-
-// Dashboard
-$(function() {
-  $.ajax({
-         type:"POST",
-         url:"/api/execute/",
-         data: {
-                'command': 'get_all',
-                'args': null,
-                'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value
-                },
-          success: function (result) {
-              //alert(JSON.stringify(result)); 
-              $('#pointing_readout').text(JSON.stringify(result));
-            }
-    });
-});
-
 // Paddle controls: 
 // - commands delivered via data-downcommand and data-upcommand (press and release), 
 // - id='paddle_something' to match contains jsquery for 'paddle'

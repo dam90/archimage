@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'align$', views.align, name='align'),
     url(r'track$', views.track, name='track'),
     url(r'locations$', views.locations, name='locations'),
+    url(r'monitor$', views.monitor, name='monitor'),
 ]

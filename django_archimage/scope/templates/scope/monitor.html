@@ -1,8 +1,14 @@
+{% load static %}
 {% block content %}
-<h3>Current Pointing</h3>
+
+<div class="checkbox">
+  <label>
+    <input id="toggle-monitor" type="checkbox" data-toggle="toggle" data-on="Monitoring" data-off="Monitor Off" data-offstyle='default' data-onstyle='primary' checked>
+  </label>
+</div>
 	
-	<div>
-		<pre id="pointing_readout"></pre>
-	</div>
+<div>
+	<pre id="pointing_readout"></pre>
+</div>
 
 {% endblock %}

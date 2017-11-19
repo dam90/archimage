@@ -29,3 +29,7 @@ def locations(request):
     form =  LocationForm()
     
     return render(request,'scope/location_form.html',{'form': form})
+
+def monitor(request):
+    #return HttpResponse("Hello, world. You're at the scope index.")
+    return render(request,'scope/monitor.html')
