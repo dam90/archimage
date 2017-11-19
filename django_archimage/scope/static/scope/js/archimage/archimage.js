@@ -13,6 +13,7 @@ function SendCommand(command,arguments) {
 };
 
 
+// Dashboard poll
 (function poll() {
   setTimeout( function() {
     $.ajax({
