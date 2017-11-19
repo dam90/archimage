@@ -1,5 +1,6 @@
 // Use this to hit the api:
 // "command" is required, arguments is optional
+// args is a "stringify-ed" json object
 function SendCommand(command,arguments) {
     $.ajax({
          type:"POST",
@@ -54,6 +55,26 @@ $(function(){
     });
     $("[id*='stop']").bind('touchstart mousedown', function() {
         SendCommand($(this).data("downcommand"),null); // Send the command to start moving
+    });
+});
+
+// jog speed slider
+$(function(){
+  var paddleslider = $('#paddle-speed-slider').bootstrapSlider({
+    tooltip: 'always',
+    tooltip_position: 'bottom',
+    precision: 2,
+    data: 'slider',
+    formatter: function(value) {
+      //$('#paddle-speed-header').text('Speed: ' + value);
+      return value;
+    }
+  });
+  $("#paddle-speed-slider").bind('touchend mouseup', function() {
+        //slide = $("#paddle-speed-slider").bootstrapSlider();
+        speed = paddleslider.bootstrapSlider('getValue');
+        SendCommand('set_speed',JSON.stringify({slew_speed_ds:speed}));
+        $('#paddle-speed-header').text('Speed: ' + speed + ' deg/s');
     });
 });
 

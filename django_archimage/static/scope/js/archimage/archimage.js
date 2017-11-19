@@ -46,15 +46,22 @@ function SendCommand(command,arguments) {
 // - commands delivered via data-downcommand and data-upcommand (press and release), 
 // - id='paddle_something' to match contains jsquery for 'paddle'
 $(function(){
-    $("[id*='paddle']").mousedown(function(){
+    $("[id*='paddle']").bind('touchstart mousedown', function() {
         SendCommand($(this).data("downcommand"),null); // Send the command to start moving
-        });
-    $("[id*='paddle']").mouseup(function(){
+    });
+    $("[id*='paddle']").bind('touchend mouseup', function() {
         SendCommand($(this).data("upcommand"),null); // Send the command to start moving
-        });
-    $("[id*='stop']").mousedown(function(){
+    });
+    $("[id*='stop']").bind('touchstart mousedown', function() {
         SendCommand($(this).data("downcommand"),null); // Send the command to start moving
-        });
+    });
+});
+
+// speed slider
+$('#ex1').slider({
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
 });
 
 // Serial connection toggle

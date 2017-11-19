@@ -15,14 +15,25 @@ def execute(request):
 	command = None
 	command_list = [ x['name'] for x in describe_class_methods(mount) ]
 
+	print 'REQUEST METHOD: ' + request.method
+
 	# get method and arguments from get or post request:
 	if request.method == "POST":
 		command = request.POST.get('command')
+
+		print "\n\n-----------------------"
+		print "POST PARAMS:"
+
+		for key in request.POST:
+				print key+": "+request.POST[key]
+		print "-----------------------\n\n"
+
 		if request.POST.get('args'):
-					arguments = json.loads(request.GET.get('args'))
+
+			arguments = json.loads(request.POST.get('args'))
+			print arguments
 	
 	elif request.method == "GET":
-
 		command = request.GET.get('command')
 		if request.GET.get('args'):
 					arguments = json.loads(request.GET.get('args'))
