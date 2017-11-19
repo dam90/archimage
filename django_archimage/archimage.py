@@ -40,10 +40,6 @@ class archimage():
             self.sidereal_time()
             self.set_latitude(self.lat)
             
-        # TODO:
-        # 2) implement threading, close/fail gracefully
-        # 3) build reader thread for catching responses
-
         print "ARCHIMAGE __INIT__: INITIALIZED COM INTERFACE!"
     
     '''
@@ -94,6 +90,56 @@ class archimage():
 
         return data
 
+    def get_object(self):
+        '''
+        Returns current target parameters (the GOTO assignment)
+        '''
+        data = {
+                'target': {
+                    'object_ra': self.get_object_ra(),
+                    'object_dec': self.get_object_dec(),
+                    'object_alt': self.get_object_alt(),
+                    'object_az': self.get_object_az()
+                    }
+                }
+
+        print json.dumps(data,indent=4)
+
+        return data
+
+    def get_tracking(self):
+        '''
+        Returns tracking rates in deg/s
+        '''
+        data = {
+                'tracking': {
+                    'track_ha': self.get_ha_rate(),
+                    'track_dec': self.get_dec_rate()
+                    }
+                }
+
+        print json.dumps(data,indent=4)
+
+        return data
+
+    def get_pointing(self):
+        '''
+        Returns all pointing parameters
+        '''
+        data = {
+                'pointing': {
+                    'ra': self.get_pointing_ra(),
+                    'ha': self.get_pointing_ha(),
+                    'dec': self.get_pointing_dec(),
+                    'az': self.get_pointing_az(),
+                    'alt': self.get_pointing_alt()
+                    }
+                }
+
+        print json.dumps(data,indent=4)
+
+        return data
+
     def sidereal_time(self):
         '''
         Returns the current sidereal time, and set's the scopes sidereal time
@@ -103,7 +149,7 @@ class archimage():
         
     def point_radec(self,ra_deg,dec_deg):
         '''
-            Set's object position and executes a goto
+        Set's object position and executes a goto
         '''
         self.set_object_ra(ra_deg)
         self.set_object_dec(dec_deg)
@@ -111,15 +157,14 @@ class archimage():
 
     def point_altaz(self,alt_deg,az_deg):
         '''
-            Executes an Az/el goto
+        Executes an Az/el goto
         '''
         self.altaz_goto(alt_deg,az_deg)
 
     def init_align(self):
         '''
-            Initializes mount pointing when pointed south at zero degrees elevation
+        Initializes mount pointing when pointed south at zero degrees elevation
         '''
-
         lat = self.get_latitude()
         dec = -1.0*(90.0-lat)
         self.set_pointing_dec(dec)
@@ -128,6 +173,9 @@ class archimage():
         return "aligned south, at zero degrees elevation!"
 
     def clear_track_rates(self):
+        '''
+        Sets both axes rates to zero.
+        '''
         self.set_ha_rate(0)
         self.set_dec_rate(0)
         return "Set HA and DEC rates to zero deg/sec!"

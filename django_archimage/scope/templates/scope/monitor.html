@@ -1,14 +1,16 @@
 {% load static %}
 {% block content %}
 
-<div class="checkbox">
-  <label>
-    <input id="toggle-monitor" type="checkbox" data-toggle="toggle" data-on="Monitoring" data-off="Monitor Off" data-offstyle='default' data-onstyle='primary' checked>
-  </label>
-</div>
-	
 <div>
-	<pre id="pointing_readout"></pre>
+	<div class="checkbox">
+	  <label>
+	    <input id="toggle-monitor" type="checkbox" data-toggle="toggle" data-on="Monitoring" data-off="Monitor Off" data-offstyle='default' data-onstyle='primary' unchecked>
+	  </label>
+	</div>
+		
+	<div>
+		<pre id="pointing_readout"></pre>
+	</div>
 </div>
 
 {% endblock %}
