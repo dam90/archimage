@@ -12,6 +12,36 @@ function SendCommand(command,arguments) {
     });
 };
 
+
+// Mount Monitor Poll
+(function poll() {
+  setTimeout( function() {
+    if ($('#toggle-monitor').prop('checked')){
+    $.ajax({
+         type:"POST",
+         url:"/api/execute/",
+         data: {
+                'command': 'get_all',
+                'args': null,
+                'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value
+                },
+          dataType: 'json',
+          success: function (result) {
+              // update the display
+              $('#pointing_readout').text(JSON.stringify(result.response, null, 4));
+              // poll again
+              poll();
+            }
+          });
+    } else {
+      // poll again
+      $('#pointing_readout').text('Monitoring Disabled');
+      poll();
+    }
+  }, 1000);
+})();
+
+
 // Paddle controls: 
 // - commands delivered via data-downcommand and data-upcommand (press and release), 
 // - id='paddle_something' to match contains jsquery for 'paddle'

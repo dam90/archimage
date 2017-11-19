@@ -71,19 +71,29 @@ class archimage():
         Returns all "get-able" parameters
         '''
         data = {
-                'ra': self.get_pointing_ra(),
-                'ha': self.get_pointing_ha(),
-                'dec': self.get_pointing_dec(),
-                'az': self.get_pointing_az(),
-                'alt': self.get_pointing_alt(),
-                'track_ha': self.get_ha_rate(),
-                'track_dec': self.get_dec_rate()
+                'pointing': {
+                    'ra': self.get_pointing_ra(),
+                    'ha': self.get_pointing_ha(),
+                    'dec': self.get_pointing_dec(),
+                    'az': self.get_pointing_az(),
+                    'alt': self.get_pointing_alt()
+                    },
+                'tracking': {
+                    'track_ha': self.get_ha_rate(),
+                    'track_dec': self.get_dec_rate()
+                    },
+                'target': {
+                    'object_ra': self.get_object_ra(),
+                    'object_dec': self.get_object_dec(),
+                    'object_alt': self.get_object_alt(),
+                    'object_az': self.get_object_az()
+                    }
                 }
 
         print json.dumps(data,indent=4)
 
         return data
-        
+
     def sidereal_time(self):
         '''
         Returns the current sidereal time, and set's the scopes sidereal time
@@ -231,7 +241,7 @@ class archimage():
         if self.live_comm:
             return hms2dd(resp['payload'])
         else:
-            return random.uniform(0.000,24.000)
+            return random.uniform(0.000,360.000)
     
     def set_latitude(self,decimal_latitude_degrees):
         command = "set latitude=" + "{:.6f}".format(decimal_latitude_degrees) + "d"
@@ -420,7 +430,10 @@ class archimage():
     def get_object_ra(self):
         command = "get objectra"
         resp = self.send(command)
-        return hms2dd(resp['payload'])
+        if self.live_comm:
+            return hms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,359.999)
         
     def set_object_dec(self,declination_dd):
         command = "set objectdec=" + "{:.5f}".format(declination) + "d"
@@ -429,17 +442,26 @@ class archimage():
     def get_object_dec(self):
         command = "get objectdec"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            return dms2dd(resp['payload'])
+        else:
+            return random.uniform(-90.000,90.000)
     
     def get_object_az(self):
         command = "get objectaz"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            return dms2dd(resp['payload'])
+        else:
+            return random.uniform(0.000,360.000)
         
     def get_object_alt(self):
         command = "get objectalt"
         resp = self.send(command)
-        return dms2dd(resp['payload'])
+        if self.live_comm:
+            return dms2dd(resp['payload'])
+        else:
+            return random.uniform(-90.000,90.000)
 
     def goto(self):
         return self.send("goto")
