@@ -2,22 +2,7 @@
 {% block content %}
 <div class="row centered-form center-block">
 	<div class="containder col-md-10 col-md-offset-1">
-		<div class="container stretch">
-			<div class="row text-center">
 
-			    <button type="submit" class="btn btn-primary" onclick="SendCommand('find_home',null)">
-			      <span class="glyphicon glyphicon-home"></span> Find Home
-			    </button>
-
-				<button type="submit" class="btn btn-primary" onclick="SendCommand('goto',null)">
-				  <span class="glyphicon glyphicon-screenshot"></span> GOTO
-				</button>
-
-				<button type="submit" class="btn btn-primary" onclick="SendCommand('sync',null)">
-				  <span class="glyphicon glyphicon-check"></span> SYNC
-				</button>
-		</div>
-		<br/>
 		{% include 'scope/set_location.html' %}
 		{% include 'scope/set_pointing.html' %}
 		{% include 'scope/paddle.html' %}

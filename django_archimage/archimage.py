@@ -25,6 +25,10 @@ class archimage():
         self.baudrate= 9600
         self.timeout= 0.1
         self.counter = 0
+
+        # virtual mount:
+        self.virtual_ra = 0
+        self.virtual_dec = 0
         
         if self.live_comm : # open serial port
             self.ser = serial.Serial(
@@ -47,6 +51,16 @@ class archimage():
     /////////////////  High-Level Mount Operations  \\\\\\\\\\\\\\\\\
     -----------------------------------------------------------------
     '''
+
+    def set_virtual_dec(self,dec_dd):
+        print "setting virtual dec to:", dec_dd
+        self.virtual_dec = float(dec_dd)
+        return 'virtual dec set'
+
+    def set_virtual_ra(self,ra_dd):
+        print "setting virtual ra to:", ra_dd
+        self.virtual_ra = float(ra_dd)
+        return 'virtual ra set'
 
     def connect(self):
         '''
@@ -139,6 +153,15 @@ class archimage():
         print json.dumps(data,indent=4)
 
         return data
+
+    def set_location(self,lat_dd,lon_dd):
+        '''
+        Sets latitude and sidereal time.  Input lat,lon in decimal degrees.
+        '''
+        sidereal_time = compute_sidereal_time(lon_dd)
+        self.set_sidereal(sidereal_time)
+        self.set_latitude(lat_dd)
+
 
     def sidereal_time(self):
         '''
@@ -335,7 +358,8 @@ class archimage():
         if self.live_comm:
             return hms2dd(resp['payload'])
         else:
-            return random.uniform(0.000,360.000)
+            #return random.uniform(0.000,360.000)
+            return self.virtual_ra
         
     def get_pointing_ha(self):
         command = "get ha"
@@ -351,7 +375,8 @@ class archimage():
         if self.live_comm:
             dms2dd(resp['payload'])
         else:
-            return random.uniform(-90.000,90.000)
+            #return random.uniform(-90.000,90.000)
+            return self.virtual_dec
 
     def set_pointing_ha(self,ha_dd):
         '''
@@ -411,7 +436,7 @@ class archimage():
         return self.send("home find")
     def home_setup(self):
         return self.send("home setup")
-    def home_park(self):
+    def park(self):
         return self.send("home park")
     def set_park(self):
         return self.send("home x_parkset")
@@ -472,7 +497,7 @@ class archimage():
     # set/get target parameters
     
     def set_object_ra(self,hour_angle_dd):
-        command = "set objectra=" + "{:.5f}".format(hour_angle/15) + "h"
+        command = "set objectra=" + "{:.5f}".format(hour_angle_dd/15) + "h"
         return self.send(command)
         
     def get_object_ra(self):
@@ -484,7 +509,7 @@ class archimage():
             return random.uniform(0.000,359.999)
         
     def set_object_dec(self,declination_dd):
-        command = "set objectdec=" + "{:.5f}".format(declination) + "d"
+        command = "set objectdec=" + "{:.5f}".format(declination_dd) + "d"
         return self.send(command)
         
     def get_object_dec(self):

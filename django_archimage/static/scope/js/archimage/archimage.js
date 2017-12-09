@@ -1,14 +1,17 @@
+
 // Use this to hit the api:
 // "command" is required, arguments is optional
+// args is a "stringify-ed" json object
 function SendCommand(command,arguments) {
-    $.ajax({
+    var jqXHR = $.ajax({
          type:"POST",
          url:"/api/execute/",
          data: {
                 'command': command,
                 'args': arguments,
                 'csrfmiddlewaretoken': document.getElementsByName('csrfmiddlewaretoken')[0].value
-                }
+                },
+          dataType: 'json'
     });
 };
 
@@ -57,11 +60,38 @@ $(function(){
     });
 });
 
-// speed slider
-$('#ex1').slider({
-  formatter: function(value) {
-    return 'Current value: ' + value;
-  }
+// Location Stuff
+$(function(){
+
+    $("#location-btn").bind('touchstart mousedown', function() {
+      // Set latitude
+      var lat = parseFloat($("#latitude-input").val())
+      var lon = parseFloat($("#longitude-input").val())
+      console.log('Setting latitude to ' + lat)
+      console.log('Setting longitude to ' + lon)
+      SendCommand('set_location',JSON.stringify({lat_dd:lat,lon_dd:lon}))
+
+    });
+});
+
+// jog speed slider
+$(function(){
+  var paddleslider = $('#paddle-speed-slider').bootstrapSlider({
+    tooltip: 'always',
+    tooltip_position: 'bottom',
+    precision: 2,
+    data: 'slider',
+    formatter: function(value) {
+      //$('#paddle-speed-header').text('Speed: ' + value);
+      return value;
+    }
+  });
+  $("#paddle-speed-slider").bind('touchend mouseup', function() {
+        //slide = $("#paddle-speed-slider").bootstrapSlider();
+        speed = paddleslider.bootstrapSlider('getValue');
+        SendCommand('set_speed',JSON.stringify({slew_speed_ds:speed}));
+        $('#paddle-speed-header').text('Speed: ' + speed + ' deg/s');
+    });
 });
 
 // Serial connection toggle

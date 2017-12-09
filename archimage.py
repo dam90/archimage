@@ -1,8 +1,11 @@
 #!python2
 import serial
-import ephem
-import io, re, random, time, binascii, json
+import binascii
+import time
 from datetime import datetime
+import threading
+import ephem
+import io, re
 
 class archimage():
     def __init__(self,live=True):
@@ -40,106 +43,15 @@ class archimage():
             self.sidereal_time()
             self.set_latitude(self.lat)
             
-        print "ARCHIMAGE __INIT__: INITIALIZED COM INTERFACE!"
+        # TODO:
+        # 2) implement threading, close/fail gracefully
+        # 3) build reader thread for catching responses
     
     '''
     -----------------------------------------------------------------
     /////////////////  High-Level Mount Operations  \\\\\\\\\\\\\\\\\
     -----------------------------------------------------------------
     '''
-
-    def connect(self):
-        '''
-        Establish serial comms
-        '''
-        print "connected!"
-        return "connected!"
-
-    def disconnect(self):
-        '''
-        Break serial comms
-        '''
-        print "disconnected!"
-        return "disconnected!"
-
-    def get_all(self):
-        '''
-        Returns all "get-able" parameters
-        '''
-        data = {
-                'pointing': {
-                    'ra': self.get_pointing_ra(),
-                    'ha': self.get_pointing_ha(),
-                    'dec': self.get_pointing_dec(),
-                    'az': self.get_pointing_az(),
-                    'alt': self.get_pointing_alt()
-                    },
-                'tracking': {
-                    'track_ha': self.get_ha_rate(),
-                    'track_dec': self.get_dec_rate()
-                    },
-                'target': {
-                    'object_ra': self.get_object_ra(),
-                    'object_dec': self.get_object_dec(),
-                    'object_alt': self.get_object_alt(),
-                    'object_az': self.get_object_az()
-                    }
-                }
-
-        print json.dumps(data,indent=4)
-
-        return data
-
-    def get_object(self):
-        '''
-        Returns current target parameters (the GOTO assignment)
-        '''
-        data = {
-                'target': {
-                    'object_ra': self.get_object_ra(),
-                    'object_dec': self.get_object_dec(),
-                    'object_alt': self.get_object_alt(),
-                    'object_az': self.get_object_az()
-                    }
-                }
-
-        print json.dumps(data,indent=4)
-
-        return data
-
-    def get_tracking(self):
-        '''
-        Returns tracking rates in deg/s
-        '''
-        data = {
-                'tracking': {
-                    'track_ha': self.get_ha_rate(),
-                    'track_dec': self.get_dec_rate()
-                    }
-                }
-
-        print json.dumps(data,indent=4)
-
-        return data
-
-    def get_pointing(self):
-        '''
-        Returns all pointing parameters
-        '''
-        data = {
-                'pointing': {
-                    'ra': self.get_pointing_ra(),
-                    'ha': self.get_pointing_ha(),
-                    'dec': self.get_pointing_dec(),
-                    'az': self.get_pointing_az(),
-                    'alt': self.get_pointing_alt()
-                    }
-                }
-
-        print json.dumps(data,indent=4)
-
-        return data
-
     def sidereal_time(self):
         '''
         Returns the current sidereal time, and set's the scopes sidereal time
@@ -149,7 +61,7 @@ class archimage():
         
     def point_radec(self,ra_deg,dec_deg):
         '''
-        Set's object position and executes a goto
+            Set's object position and executes a goto
         '''
         self.set_object_ra(ra_deg)
         self.set_object_dec(dec_deg)
@@ -157,28 +69,18 @@ class archimage():
 
     def point_altaz(self,alt_deg,az_deg):
         '''
-        Executes an Az/el goto
+            Executes an Az/el goto
         '''
         self.altaz_goto(alt_deg,az_deg)
 
     def init_align(self):
         '''
-        Initializes mount pointing when pointed south at zero degrees elevation
+            Initializes mount pointing when pointed south at zero degrees elevation
         '''
         lat = self.get_latitude()
         dec = -1.0*(90.0-lat)
         self.set_pointing_dec(dec)
         self.set_pointing_ha(0.0)
-        
-        return "aligned south, at zero degrees elevation!"
-
-    def clear_track_rates(self):
-        '''
-        Sets both axes rates to zero.
-        '''
-        self.set_ha_rate(0)
-        self.set_dec_rate(0)
-        return "Set HA and DEC rates to zero deg/sec!"
 
     
     '''
@@ -286,10 +188,7 @@ class archimage():
         '''
         command = "get sidereal"
         resp = self.send(command)
-        if self.live_comm:
-            return hms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,360.000)
+        return hms2dd(resp['payload'])
     
     def set_latitude(self,decimal_latitude_degrees):
         command = "set latitude=" + "{:.6f}".format(decimal_latitude_degrees) + "d"
@@ -301,10 +200,7 @@ class archimage():
         '''
         command = "get latitude"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(-90.000,90.000)
+        return dms2dd(resp['payload'])
 
     '''
     -------------------------
@@ -332,26 +228,16 @@ class archimage():
     def get_pointing_ra(self):
         command = "get ra"
         resp = self.send(command)
-        if self.live_comm:
-            return hms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,360.000)
+        return hms2dd(resp['payload'])
         
     def get_pointing_ha(self):
-        command = "get ha"
         resp = self.send(command)
-        if self.live_comm:
-            return hms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,360.000)
+        return hms2dd(resp['payload'])
     
     def get_pointing_dec(self):
         command = "get dec"
         resp = self.send(command)
-        if self.live_comm:
-            dms2dd(resp['payload'])
-        else:
-            return random.uniform(-90.000,90.000)
+        return dms2dd(resp['payload'])
 
     def set_pointing_ha(self,ha_dd):
         '''
@@ -372,18 +258,12 @@ class archimage():
     def get_pointing_az(self):
         command = "get az"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,359.999)
+        return dms2dd(resp['payload'])
     
     def get_pointing_alt(self):
         command = "get alt"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(-90.000,90.000)
+        return dms2dd(resp['payload'])
 
     def set_pointing_az(self,az_dd):
         '''
@@ -431,19 +311,13 @@ class archimage():
         '''
         command = "get trackha"
         resp = self.send(command)
-        if self.live_comm:
-            return float(resp['payload'])
-        else:
-            return random.uniform(0.000,4.000)
-
+        return float(resp['payload'])
+        
     def get_dec_rate(self):
         command = "get trackdec"
         resp = self.send(command)
-        if self.live_comm:
-            return float(resp['payload'])
-        else:
-            return random.uniform(0.000,4.000)
-
+        return float(resp['payload'])
+        
     def set_ha_rate(self,rate_ds):
         '''
             Specifcy ha tracking rate in deg/s
@@ -472,44 +346,32 @@ class archimage():
     # set/get target parameters
     
     def set_object_ra(self,hour_angle_dd):
-        command = "set objectra=" + "{:.5f}".format(hour_angle/15) + "h"
+        command = "set objectra=" + "{:.5f}".format(hour_angle_dd/15) + "h"
         return self.send(command)
         
     def get_object_ra(self):
         command = "get objectra"
         resp = self.send(command)
-        if self.live_comm:
-            return hms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,359.999)
+        return hms2dd(resp['payload'])
         
     def set_object_dec(self,declination_dd):
-        command = "set objectdec=" + "{:.5f}".format(declination) + "d"
+        command = "set objectdec=" + "{:.5f}".format(declination_dd) + "d"
         return self.send(command)
         
     def get_object_dec(self):
         command = "get objectdec"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(-90.000,90.000)
+        return dms2dd(resp['payload'])
     
     def get_object_az(self):
         command = "get objectaz"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(0.000,360.000)
+        return dms2dd(resp['payload'])
         
     def get_object_alt(self):
         command = "get objectalt"
         resp = self.send(command)
-        if self.live_comm:
-            return dms2dd(resp['payload'])
-        else:
-            return random.uniform(-90.000,90.000)
+        return dms2dd(resp['payload'])
 
     def goto(self):
         return self.send("goto")

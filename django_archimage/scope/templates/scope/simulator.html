@@ -1,0 +1,29 @@
+{% block content %}
+
+<style type="text/css">
+	#simulator-ra-position-slider .slider-selection {
+	background: #BABABA;
+}
+	#simulator-dec-position-slider .slider-selection {
+	background: #BABABA;
+}
+
+</style>
+
+<div class="container stretch">
+	<div class="well row">
+			<h3>Simulator </h3>
+			<h4 id="simulator-position-header">Simulated RA Position</h4>
+			<div class="row text-center">
+				<input id="simulator-ra-position-slider" data-slider-id='simulator-ra-position-slider' type="text" data-slider-min="0" data-slider-max="360" data-slider-step="1" data-slider-value="0" style="width:75%" />
+			</div>
+			<br/><br/>
+			<h4 id="simulator-position-header">Simulated DEC Position</h4>
+			<div class="row text-center">
+				<input id="simulator-dec-position-slider" data-slider-id='simulator-dec-position-slider' type="text" data-slider-min="-90" data-slider-max="90" data-slider-step="1" data-slider-value="0" style="width:75%" />
+			</div>
+			<br/><br/>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -3,6 +3,7 @@ from django import forms
 import archimage
 from test_inspect import describe_class_methods
 import json, traceback
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
 mount = archimage.archimage(live=False)
 
@@ -10,6 +11,8 @@ def index(request):
 	js = describe_class_methods(mount)
 	return HttpResponse(json.dumps(js))
 
+
+@csrf_exempt
 def execute(request):
 	arguments = None
 	command = None

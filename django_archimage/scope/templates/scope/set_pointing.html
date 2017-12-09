@@ -11,31 +11,44 @@
 					<div class="input-group">
 					<span class="input-group-addon" id="basic-addon3">Coordinate</span>
 						<select class="form-control" id="coordinate-id" name="coordinate">
-							<option value="set_pointing_ra">Righ Ascension</option>
-							<option value="set_pointing_ha">Hour Angle</option>
-							<option value="set_pointing_dec">Declination</option>
-							<option value="set_pointing_az">Azimuth</option>
-							<option value="set_pointing_alt">Altitude</option>
+							<option value="ha">Hour Angle</option>
+							<option value="dec">Declination</option>
+							<option value="az">Azimuth</option>
+							<option value="alt">Altitude</option>
 						</select>
 					</div>
 				</div>
 				<div class="col-xs-2"></div>
 			</div>
 			<br/>
+			<div class="checkbox">
+			  <label>
+			    <input id="toggle-angle-format" type="checkbox" data-toggle="toggle" data-on="Degrees" data-off="Sexasigmal" data-offstyle='primary' checked>
+			    Angle Format
+			    <div id="console-event"></div>
+			  </label>
+			</div>
+			<br/>
 			<div class="row text-center">
-				<div class="col-xs-4">
+				<div id="degrees-form" class="col-xs-4">
 					<div class="input-group">
 					  <span class="input-group-addon" id="basic-addon3">Degrees</span>
 					  <input type="text" class="form-control" id="degrees" aria-describedby="basic-addon3">
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div id="hours-form" class="col-xs-4" style="display:none;">
+					<div class="input-group">
+					  <span class="input-group-addon" id="basic-addon3">Hours</span>
+					  <input type="text" class="form-control" id="hours" aria-describedby="basic-addon3">
+					</div>
+				</div>
+				<div id="minutes-form" class="col-xs-4" style="display:none;">
 					<div class="input-group">
 					  <span class="input-group-addon" id="basic-addon3">Minutes</span>
 					  <input type="text" class="form-control" id="minutes" aria-describedby="basic-addon3">
 					</div>
 				</div>
-				<div class="col-xs-4">
+				<div id="seconds-form" class="col-xs-4" style="display:none;">
 					<div class="input-group">
 					  <span class="input-group-addon" id="basic-addon3">Seconds</span>
 					  <input type="text" class="form-control" id="seconds" aria-describedby="basic-addon3">
@@ -46,7 +59,7 @@
 			<div class="row text-right">
 				<div class="col-xs-4">
 					<div class="input-group">
-						<button class="btn btn-primary " name="submit" type="submit">Set Pointing</button>
+						<button id="pointing-btn" class="btn btn-primary " name="submit" type="submit">Set Pointing</button>
 					</div>
 				</div>
 				<div class="col-xs-8"></div>

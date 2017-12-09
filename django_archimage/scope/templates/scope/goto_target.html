@@ -1,0 +1,155 @@
+{% block content %}
+
+<div class="container stretch">
+	<div class="well row">
+
+		<h3>GOTO Target</h3>
+
+		<div class="form-group">
+
+			<div class="row text-center">
+				<div class="col-xs-10">
+					<div class="input-group">
+					<span class="input-group-addon" id="basic-addon3">Coordinate Frame</span>
+						<select class="form-control" id="goto-coordinate-id" name="coordinate">
+							<option value="ra-dec">Right Acension/Declination</option>
+							<option value="alt-az">Azimuth/Altitude</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-xs-2"></div>
+			</div>
+
+			<br/>
+
+			<div class="checkbox">
+			  <label>
+			    <input id="toggle-goto-angle-format" type="checkbox" data-toggle="toggle" data-on="Degrees" data-off="Sexasigmal" data-offstyle='primary' checked>
+			    Angle Format
+			    <div id="console-event"></div>
+			  </label>
+			</div>
+			<br/>
+
+			<!-- Celestial Pointing Input -->
+			<div id="goto-celestial">
+				<!-- Hour Angle -->
+
+				<h4>Right Acesnsion Angle</h4>
+				<div class="row text-center">
+					<div id="goto-ra-degrees-form" class="col-xs-4">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+						  <input type="text" class="form-control" id="goto-ra-degrees" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-ra-hours-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Hours</span>
+						  <input type="text" class="form-control" id="goto-ra-hours" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-ra-minutes-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Minutes</span>
+						  <input type="text" class="form-control" id="goto-ra-minutes" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-ra-seconds-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Seconds</span>
+						  <input type="text" class="form-control" id="goto-ra-seconds" aria-describedby="basic-addon3">
+						</div>
+					</div>
+				</div>
+				<br/>
+				<!-- Declination Angle -->
+				<h4> Declination</h4>
+				<div class="row text-center">
+					<div id="goto-dec-degrees-form" class="col-xs-4">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+						  <input type="text" class="form-control" id="goto-dec-degrees" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-dec-minutes-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Minutes</span>
+						  <input type="text" class="form-control" id="goto-dec-minutes" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-dec-seconds-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Seconds</span>
+						  <input type="text" class="form-control" id="goto-dec-seconds" aria-describedby="basic-addon3">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Topocentric Pointing Input -->
+			<div id="goto-topo">
+				<!-- Azimuth Angle -->
+				<h4>Azimuth</h4>
+				<div class="row text-center">
+					<div id="goto-az-degrees-form" class="col-xs-4">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+						  <input type="text" class="form-control" id="goto-az-degrees" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-az-minutes-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Minutes</span>
+						  <input type="text" class="form-control" id="goto-az-minutes" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-az-seconds-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Seconds</span>
+						  <input type="text" class="form-control" id="goto-az-seconds" aria-describedby="basic-addon3">
+						</div>
+					</div>
+				</div>
+				<br/>
+				<!-- Altitude Angle -->
+				<h4> Altitude</h4>
+				<div class="row text-center">
+					<div id="goto-alt-degrees-form" class="col-xs-4">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+						  <input type="text" class="form-control" id="goto-alt-degrees" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-alt-minutes-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Minutes</span>
+						  <input type="text" class="form-control" id="goto-alt-minutes" aria-describedby="basic-addon3">
+						</div>
+					</div>
+					<div id="goto-alt-seconds-form" class="col-xs-4" style="display:none;">
+						<div class="input-group">
+						  <span class="input-group-addon" id="basic-addon3">Seconds</span>
+						  <input type="text" class="form-control" id="goto-alt-seconds" aria-describedby="basic-addon3">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br/>
+			<div class="row text-right">
+				<div class="col-xs-4">
+					<div class="input-group">
+						<button id="goto-target-btn" class="btn btn-primary " name="submit" type="submit">
+							<span class="glyphicon glyphicon-screenshot"></span> GOTO Target</button>
+					</div>
+				</div>
+				<div class="col-xs-8"></div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+{% endblock %}
