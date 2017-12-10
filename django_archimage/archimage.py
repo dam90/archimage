@@ -1,8 +1,9 @@
 #!python2
 import serial
 import ephem
-import io, re, random, time, binascii, json
+import io, re, random, time, binascii, json, numpy
 from datetime import datetime
+from threading import Thread
 
 class archimage():
     def __init__(self,live=True):
@@ -27,8 +28,12 @@ class archimage():
         self.counter = 0
 
         # virtual mount:
+        self.virtual_abort = False
         self.virtual_ra = 0
         self.virtual_dec = 0
+        self.virtual_speed = 10
+        self.virtual_ra_rate = 2
+        self.virtual_dec_rate = 2
         
         if self.live_comm : # open serial port
             self.ser = serial.Serial(
@@ -174,9 +179,37 @@ class archimage():
         '''
         Set's object position and executes a goto
         '''
-        self.set_object_ra(ra_deg)
-        self.set_object_dec(dec_deg)
-        self.goto()
+        if self.live_comm:
+            self.set_object_ra(ra_deg)
+            self.set_object_dec(dec_deg)
+            self.goto()
+        else:
+            thread = Thread(target=self.simulated_radec_slew,args=(ra_deg,dec_deg,))
+            thread.start()
+
+    def simulated_radec_slew(self,ra_deg,dec_deg):
+        delta_ra = abs(self.virtual_ra - ra_deg/15)*15
+        if delta_ra > 180:
+            if ra_deg < 180:
+                ra_deg = ra_deg - 360
+            else:
+                ra_deg = ra_deg - 360
+            delta_ra = abs(self.virtual_ra - ra_deg/15)*15
+
+        delta_dec = abs(self.virtual_dec - dec_deg)
+        delta = max(delta_ra,delta_dec)
+        resolution = .5 # degrees
+        spaces = int(numpy.ceil(delta/resolution))
+        ra_vals = numpy.linspace(self.virtual_ra,ra_deg/15,spaces)
+        dec_vals = numpy.linspace(self.virtual_dec,dec_deg,spaces)
+        delay = resolution / self.virtual_speed
+        for r,d in zip(ra_vals,dec_vals):
+            if self.virtual_abort:
+                break
+            self.virtual_ra = r
+            self.virtual_dec = d
+            time.sleep(delay)
+        return
 
     def point_altaz(self,alt_deg,az_deg):
         '''
@@ -578,7 +611,12 @@ class archimage():
          return self.send("stop west")
          
     def stop(self):
-         return self.send("stop")
+        if self.live_comm:
+            return self.send("stop")
+        else:
+            self.virtual_abort = True
+            time.sleep(1)
+            self.virtual_abort = False
 
     '''
     -----------------------------------------------------------
