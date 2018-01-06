@@ -1,16 +1,37 @@
 {% load static %}
 {% block content %}
+<div class="container stretch">
+	<div class="well row">
 
-<div>
-	<div class="checkbox">
-	  <label>
-	    <input id="toggle-monitor" type="checkbox" data-toggle="toggle" data-on="Monitoring" data-off="Monitor Off" data-offstyle='default' data-onstyle='primary' unchecked>
-	  </label>
-	</div>
-		
-	<div>
-		<pre id="pointing_readout"></pre>
+		<div class="checkbox">
+		  <label>
+		    <input id="toggle-monitor" type="checkbox" data-toggle="toggle" data-on="Monitoring" data-off="Monitor Off" data-offstyle='default' data-onstyle='primary' unchecked>
+		  </label>
+		</div>
+
+		<div id="monitor-display" style="display: none;">
+
+			<pre id="pointing_readout"></pre>
+
+			<!-- Table of Values -->
+			<div class="row text-center">
+					
+				<div id="monitor-pointing-ra" class="col-xs-4">
+					<div class="form-group">
+					  <span class="input-group-addon" id="basic-addon3">Degrees</span>
+					  <input type="text" class="form-control" id="degrees" aria-describedby="basic-addon3" readonly>
+					</div>
+				</div>
+				<div id="hours-form" class="col-xs-4">
+					<div class="form-group">
+					  <span class="input-group-addon" id="basic-addon3">Hours</span>
+					  <input type="text" class="form-control" id="hours" aria-describedby="basic-addon3" readonly>
+					</div>
+				</div>
+
+			</div>
+
 	</div>
 </div>
-
+</div>
 {% endblock %}

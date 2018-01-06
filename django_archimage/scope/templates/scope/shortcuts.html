@@ -1,0 +1,39 @@
+<!-- Shortcut Pannel -->
+<div class="container stretch">
+  <div class="well row">
+
+
+    <div class="checkbox">
+      <label>
+        <input id="toggle-shortcuts" type="checkbox" data-toggle="toggle" data-on="Shortcuts On" data-off="Shortcuts Off" data-offstyle='default' data-onstyle='primary' data-target="#collapseExample" unchecked>
+        <div id="console-event"></div>
+      </label>
+    </div>
+
+    <div class="collapse" id="collapseExample">
+      <div class="row centered-form center-block">
+
+            <div class="btn-toolbar">
+
+              <button type="submit" class="btn btn-primary" onclick="SendCommand('find_home',null)">
+                <span class="glyphicon glyphicon-home"></span> Find Home
+              </button>
+
+              <button type="submit" class="btn btn-primary" onclick="SendCommand('sync',null)">
+                <span class="glyphicon glyphicon-check"></span> SYNC
+              </button>
+
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input id="toggle-tracking-shortcut" type="checkbox" data-toggle="toggle">
+                Sidereal Tracking
+              </label>
+            </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>

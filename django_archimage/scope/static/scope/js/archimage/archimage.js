@@ -85,6 +85,7 @@ $(function(){
 (function poll() {
   setTimeout( function() {
     if ($('#toggle-monitor').prop('checked')){
+      $('#monitor-display').show();
       $.ajax({
        type:"POST",
        url:"/api/execute/",
@@ -103,7 +104,8 @@ $(function(){
           });
     } else {
       // poll again
-      $('#pointing_readout').text('Monitoring Disabled');
+      //$('#pointing_readout').text('Monitoring Disabled');
+      $('#monitor-display').hide();
       poll();
     }
   }, 1000);
@@ -372,8 +374,9 @@ $(function(){
 // Archiamge flag toggles
 $(function() {
 
-  $('#toggle-tracking').change(function() { // TOGGLE: Track
+  $('[id^=toggle-tracking]').change(function() { // TOGGLE: Track
     if ($(this).prop('checked')) { // activate track
+      $(this).bootstrapToggle('On');
       SendCommand('enable_track',null);
     } else { // disable track
       SendCommand('disable_track',null);
