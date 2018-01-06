@@ -1,0 +1,7 @@
+version: '3'
+  services:
+    archimage:
+      image: "dm90/archimage"
+      ports:
+        -	8001:8001
+      restart: unless-stopped
