@@ -1,10 +1,9 @@
-FROM centos:latest
-# Install pip and git
-RUN ["yum","-y","install","epel-release"]
-RUN ["yum","-y","update"]
-RUN ["yum","install","-y","python2-pip","git"]
-# get the code
+FROM python:2
+RUN ["apt-get","-y","update"]
+RUN ["apt-get","install","-y","git"]
 RUN ["git","clone","https://github.com/dam90/archimage"]
-# install python dependencies
-RUN ["cd","archimage"]
-RUN ["pip","install","-r","requirements.txt"]
+WORKDIR archimage
+RUN ["pip","install","--no-cache-dir","-r","requirements.txt"]
+WORKDIR django_archimage
+EXPOSE 8001
+ENTRYPOINT ["gunicorn","django_archimage.wsgi","-b",":8001"]
