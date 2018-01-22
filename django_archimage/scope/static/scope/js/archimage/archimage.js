@@ -97,7 +97,10 @@ $(function(){
       dataType: 'json',
       success: function (result) {
               // update the display
-              $('#pointing_readout').text(JSON.stringify(result.response, null, 4));
+              $('#pointing_readout').text(JSON.stringify(result.response.pointing, null, 4));
+              $('#tracking_readout').text(JSON.stringify(result.response.tracking, null, 4));
+              $('#target_readout').text(JSON.stringify(result.response.target, null, 4));
+              $('#status_readout').text(JSON.stringify(result.response.status, null, 4));
               // poll again
               poll();
             }

@@ -11,22 +11,40 @@
 
 		<div id="monitor-display" style="display: none;">
 
-			<pre id="pointing_readout"></pre>
+			<!-- <pre id="demo_readout"></pre> -->
 
 			<!-- Table of Values -->
-			<div class="row text-center">
-					
-				<div id="monitor-pointing-ra" class="col-xs-4">
-					<div class="form-group">
-					  <span class="input-group-addon" id="basic-addon3">Degrees</span>
-					  <input type="text" class="form-control" id="degrees" aria-describedby="basic-addon3" readonly>
-					</div>
+			<div>
+				
+				Not sure what the best way to break these out is...
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">Pointing</div>
+				  <div class="panel-body">
+				    <pre id="pointing_readout"></pre>
+				  </div>
 				</div>
-				<div id="hours-form" class="col-xs-4">
-					<div class="form-group">
-					  <span class="input-group-addon" id="basic-addon3">Hours</span>
-					  <input type="text" class="form-control" id="hours" aria-describedby="basic-addon3" readonly>
-					</div>
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">Tracking</div>
+				  <div class="panel-body">
+				    <pre id="tracking_readout"></pre>
+				  </div>
+				</div>
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">Target</div>
+				  <div class="panel-body">
+				    <pre id="target_readout"></pre>
+				  </div>
+				</div>
+
+				<div class="panel panel-default">
+				  <div class="panel-heading">Status Code</div>
+				  <div class="panel-body">
+
+				    <pre id="status_readout"></pre>
+				  </div>
 				</div>
 
 			</div>

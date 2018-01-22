@@ -102,12 +102,16 @@ class archimage():
                     'object_dec': self.get_object_dec(),
                     'object_alt': self.get_object_alt(),
                     'object_az': self.get_object_az()
-                    }
+                    },
+                'status': self.get_status()
                 }
 
         print json.dumps(data,indent=4)
 
         return data
+
+    def get_status(self):
+        return self.send("satus")
 
     def get_object(self):
         '''
@@ -179,13 +183,12 @@ class archimage():
         '''
         Set's object position and executes a goto
         '''
-        if self.live_comm:
-            self.set_object_ra(ra_deg)
-            self.set_object_dec(dec_deg)
-            self.goto()
-        else:
+        if not self.live_comm:
             thread = Thread(target=self.simulated_radec_slew,args=(ra_deg,dec_deg,))
             thread.start()
+        self.set_object_ra(ra_deg)
+        self.set_object_dec(dec_deg)
+        self.goto()
 
     def simulated_radec_slew(self,ra_deg,dec_deg):
         delta_ra = abs(self.virtual_ra - ra_deg/15)*15
