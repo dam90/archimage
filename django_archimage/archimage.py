@@ -213,6 +213,7 @@ class archimage():
         # compute update rate based on on slew speed:
         delay = resolution / self.virtual_speed
 
+
         for r,d in zip(ra_vals,dec_vals):
             # see if abort was issued:
             if self.virtual_abort:
