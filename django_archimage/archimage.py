@@ -28,12 +28,12 @@ class archimage():
         self.counter = 0
 
         # virtual mount:
-        self.virtual_abort = False
-        self.virtual_ra = 0
-        self.virtual_dec = 0
-        self.virtual_speed = 10
-        self.virtual_ra_rate = 2
-        self.virtual_dec_rate = 2
+        self.virtual_abort = False # Kills slew operations when True
+        self.virtual_ra = 0 # degrees...?
+        self.virtual_dec = 0 # degrees
+        self.virtual_speed = 10 # degrees/second
+        self.virtual_ra_rate = 2 # degrees/second
+        self.virtual_dec_rate = 2 # degrees /seconds
 
         if self.live_comm : # open serial port
             self.ser = serial.Serial(
@@ -191,24 +191,33 @@ class archimage():
         self.goto()
 
     def simulated_radec_slew(self,ra_deg,dec_deg):
+        # ra slew angle
         delta_ra = abs(self.virtual_ra - ra_deg/15)*15
+        # determine which way to slew (east or west)
         if delta_ra > 180:
             if ra_deg < 180:
                 ra_deg = ra_deg - 360
             else:
                 ra_deg = ra_deg - 360
             delta_ra = abs(self.virtual_ra - ra_deg/15)*15
-
+        # determine dec slew angle
         delta_dec = abs(self.virtual_dec - dec_deg)
+        # which is larger?
         delta = max(delta_ra,delta_dec)
+        # slew step size
         resolution = .5 # degrees
-        spaces = int(numpy.ceil(delta/resolution))
-        ra_vals = numpy.linspace(self.virtual_ra,ra_deg/15,spaces)
-        dec_vals = numpy.linspace(self.virtual_dec,dec_deg,spaces)
+        # number os steps to use during slew operation
+        steps = int(numpy.ceil(delta/resolution))
+        # compute ra/dec values
+        ra_vals = numpy.linspace(self.virtual_ra,ra_deg/15,steps) # ra is in hours
+        dec_vals = numpy.linspace(self.virtual_dec,dec_deg,steps) # dec is degrees
+        # compute update rate on slew speed:
         delay = resolution / self.virtual_speed
         for r,d in zip(ra_vals,dec_vals):
+            # see if abort was issued:
             if self.virtual_abort:
                 break
+            # else update position:
             self.virtual_ra = r
             self.virtual_dec = d
             time.sleep(delay)
@@ -389,19 +398,25 @@ class archimage():
     # Equatorial Pointing:
 
     def get_pointing_ra(self):
+        '''
+        ASCOM and TheSkyX require RA in decimal hours (not ddd)
+        '''
         command = "get ra"
         resp = self.send(command)
         if self.live_comm:
-            return hms2dd(resp['payload'])
+            return hms2dh(resp['payload'])
         else:
             #return random.uniform(0.000,360.000)
             return self.virtual_ra
 
     def get_pointing_ha(self):
+        '''
+        ASCOM and TheSkyX require RA in decimal hours (not ddd)
+        '''
         command = "get ha"
         resp = self.send(command)
         if self.live_comm:
-            return hms2dd(resp['payload'])
+            return hms2dh(resp['payload'])
         else:
             return random.uniform(0.000,360.000)
 
@@ -745,6 +760,13 @@ def hms2dd(hms):
     a = ephem.hours(hms)
     dd = a*180/ephem.pi
     return dd
+
+def hms2dh(hms):
+    '''
+        given signed hms string return float hours
+    '''
+    dh = hms2dd(hms)/15
+    return dh
 
 def dbug(flag,text):
     if flag:
