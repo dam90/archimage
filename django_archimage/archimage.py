@@ -13,9 +13,9 @@ class archimage():
         self.debug_flag = False
         
         # location:
-        self.lat = 39.94963
-        self.lon = -83.81756
-        self.alt = 316
+        self.lat = 39.977080
+        self.lon = -83.9328251
+        self.alt = 0
         
         # astronomy stuff:
         self.sidereal_rate = 15.041 # arcseconds/second
@@ -35,7 +35,7 @@ class archimage():
         self.virtual_ra_rate = 2
         self.virtual_dec_rate = 2
         
-        if self.live_comm : # open serial port
+        if self.live_comm : # open serimal port
             self.ser = serial.Serial(
                     port=self.port,
                     baudrate=self.baudrate,
