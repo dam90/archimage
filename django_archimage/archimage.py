@@ -199,15 +199,20 @@ class archimage():
         '''
         # determine distance traveled in degrees:
         delta = GreatCircleDelta(self.virtual_ra,self.virtual_dec,ra_deg*15,dec_deg)
+
         # slew step size:
         resolution = 0.5 # degrees
+
         # number of steps to use during slew operation
         steps = int(numpy.ceil(delta/resolution))
+
         # compute ra/dec values (converting hours to degrees):
-        ra_vals = numpy.linspace(self.virtual_ra*15,ra_deg,steps) # ra is in hours
+        ra_vals = numpy.linspace(self.virtual_ra*15,ra_deg,steps) # ra is in degrees
         dec_vals = numpy.linspace(self.virtual_dec,dec_deg,steps) # dec is degrees
-        # compute update rate on slew speed:
+
+        # compute update rate based on on slew speed:
         delay = resolution / self.virtual_speed
+
         for r,d in zip(ra_vals,dec_vals):
             # see if abort was issued:
             if self.virtual_abort:
