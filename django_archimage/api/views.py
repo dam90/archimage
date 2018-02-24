@@ -5,12 +5,11 @@ from test_inspect import describe_class_methods
 import json, traceback
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
-mount = archimage.archimage(live=True)
+mount = archimage.archimage(live=False)
 
 def index(request):
 	js = describe_class_methods(mount)
 	return HttpResponse(json.dumps(js))
-
 
 @csrf_exempt
 def execute(request):
@@ -35,7 +34,7 @@ def execute(request):
 
 			arguments = json.loads(request.POST.get('args'))
 			print arguments
-	
+
 	elif request.method == "GET":
 		command = request.GET.get('command')
 		if request.GET.get('args'):
@@ -51,7 +50,7 @@ def execute(request):
 				result = call(**arguments)
 			else:
 				result = call()
-			
+
 			resp = {"command": command,"arguments": arguments, "response": result}
 
 		else:
@@ -62,5 +61,5 @@ def execute(request):
 		traceback.print_exc()
 		resp = {"command": command,"arguments": arguments, "response": "error"}
 
-	
+
 	return JsonResponse(resp)
