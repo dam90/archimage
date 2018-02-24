@@ -1,6 +1,7 @@
 #!python2
 import serial
 import ephem
+import numpy as np
 import io, re, random, time, binascii, json, numpy
 from datetime import datetime
 from threading import Thread
@@ -32,9 +33,10 @@ class archimage():
         self.virtual_ra = 0 # degrees...?
         self.virtual_dec = 0 # degrees
         self.virtual_speed = 10 # degrees/second
-        self.virtual_ra_rate = 2 # degrees/second
-        self.virtual_dec_rate = 2 # degrees /seconds
+        self.virtual_ra_rate = 10 # degrees/second
+        self.virtual_dec_rate = 10 # degrees /seconds
 
+        # initializing comm
         if self.live_comm : # open serial port
             self.ser = serial.Serial(
                     port=self.port,
@@ -46,8 +48,9 @@ class archimage():
             self.send("")
 
             # ensure scope position is updated
-            self.sidereal_time()
-            self.set_latitude(self.lat)
+            # Should probably get rid of this... silently changes scope settings.
+            # self.sidereal_time()
+            # self.set_latitude(self.lat)
 
         print "ARCHIMAGE __INIT__: INITIALIZED COM INTERFACE!"
 
@@ -191,25 +194,17 @@ class archimage():
         self.goto()
 
     def simulated_radec_slew(self,ra_deg,dec_deg):
-        # ra slew angle
-        delta_ra = abs(self.virtual_ra - ra_deg/15)*15
-        # determine which way to slew (east or west)
-        if delta_ra > 180:
-            if ra_deg < 180:
-                ra_deg = ra_deg - 360
-            else:
-                ra_deg = ra_deg - 360
-            delta_ra = abs(self.virtual_ra - ra_deg/15)*15
-        # determine dec slew angle
-        delta_dec = abs(self.virtual_dec - dec_deg)
-        # which is larger?
-        delta = max(delta_ra,delta_dec)
-        # slew step size
-        resolution = .5 # degrees
-        # number os steps to use during slew operation
+        '''
+        This is sloppy... but it allowed verification of ASCOM driver in TheSkyX
+        '''
+        # determine distance traveled in degrees:
+        delta = GreatCircleDelta(self.virtual_ra,self.virtual_dec,ra_deg*15,dec_deg)
+        # slew step size:
+        resolution = 0.5 # degrees
+        # number of steps to use during slew operation
         steps = int(numpy.ceil(delta/resolution))
-        # compute ra/dec values
-        ra_vals = numpy.linspace(self.virtual_ra,ra_deg/15,steps) # ra is in hours
+        # compute ra/dec values (converting hours to degrees):
+        ra_vals = numpy.linspace(self.virtual_ra*15,ra_deg,steps) # ra is in hours
         dec_vals = numpy.linspace(self.virtual_dec,dec_deg,steps) # dec is degrees
         # compute update rate on slew speed:
         delay = resolution / self.virtual_speed
@@ -218,16 +213,25 @@ class archimage():
             if self.virtual_abort:
                 break
             # else update position:
-            self.virtual_ra = r
-            self.virtual_dec = d
+            self.virtual_ra = r/15 # store the ra in decimal hours
+            self.virtual_dec = d # store the dec in degrees
             time.sleep(delay)
         return
 
     def point_altaz(self,alt_deg,az_deg):
         '''
         Executes an Az/el goto
+        Use north azimuth (0 degrees is north...)
+        I'm not sure what this does that altaz_goto doesn't do....
         '''
-        self.altaz_goto(alt_deg,az_deg)
+        if self.live_comm:
+            self.altaz_goto(alt_deg,az_deg)
+        else: # if we're simulated:
+            # get pointing in ra/dec (degrees):
+            ra_deg,dec_deg = AzEl2RaDec(datetime.now(),az_deg,alt_deg,self.lat,self.lon)
+            # simulate slew:
+            thread = Thread(target=self.simulated_radec_slew,args=(ra_deg,dec_deg,))
+            thread.start()
 
     def init_align(self):
         '''
@@ -396,9 +400,9 @@ class archimage():
     '''
 
     # Equatorial Pointing:
-
     def get_pointing_ra(self):
         '''
+        Get pointing right acension in decimal hours
         ASCOM and TheSkyX require RA in decimal hours (not ddd)
         '''
         command = "get ra"
@@ -411,6 +415,7 @@ class archimage():
 
     def get_pointing_ha(self):
         '''
+        Get pointing hour angle in decimal hours
         ASCOM and TheSkyX require RA in decimal hours (not ddd)
         '''
         command = "get ha"
@@ -418,9 +423,13 @@ class archimage():
         if self.live_comm:
             return hms2dh(resp['payload'])
         else:
-            return random.uniform(0.000,360.000)
+            ha = (self.virtual_ra - compute_sidereal_time(self.lon))*15
+            return ha
 
     def get_pointing_dec(self):
+        '''
+        Get pointing declination in decimal degrees
+        '''
         command = "get dec"
         resp = self.send(command)
         if self.live_comm:
@@ -431,46 +440,61 @@ class archimage():
 
     def set_pointing_ha(self,ha_dd):
         '''
-            specifcy pointing in decimal degrees
+        Specify pointing hour angle in decimal degrees
         '''
         command = "set ha=" + dd2hms(ha_dd)
         return self.send(command)
 
     def set_pointing_dec(self,dec_dd):
         '''
-            specifcy pointing in decimal degrees
+        Specify pointing declination in decimal degrees
         '''
         command = "set dec=" + dd2dms(dec_dd)
         return self.send(command)
 
     # Alt/Az Pointing:
-
     def get_pointing_az(self):
+        '''
+        Get pointing north azimuth in decimal degrees
+        '''
         command = "get az"
         resp = self.send(command)
         if self.live_comm:
-            return dms2dd(resp['payload'])
+            az_deg = dms2dd(resp['payload'])
+            # modify for south azimuth:
+            az_deg = (az_deg+180)%360
+            return dms2dd(az_deg)
         else:
-            return random.uniform(0.000,359.999)
+            # return simulated az/el
+            az_deg,alt_deg = RaDec2AzEl(datetime.now(),self.virtual_ra*15,self.virtual_dec,self.lat,self.lon)
+            return az_deg
 
     def get_pointing_alt(self):
+        '''
+        Get pointing altitude (elevation) in decimal degrees
+        '''
         command = "get alt"
         resp = self.send(command)
         if self.live_comm:
             return dms2dd(resp['payload'])
         else:
-            return random.uniform(-90.000,90.000)
+            # return simulated az/el
+            az_deg,alt_deg = RaDec2AzEl(datetime.now(),self.virtual_ra*15,self.virtual_dec,self.lat,self.lon)
+            return alt_deg
 
-    def set_pointing_az(self,az_dd):
+    def set_pointing_az(self,az_deg):
         '''
-            specifcy pointing in decimal degrees
+        Specify pointing north azimuth in decimal degrees
+
         '''
-        command = "set az=" + dd2dms(az_dd)
+        # modify for south azimuth:
+        az_deg = (az_deg - 180)%360
+        command = "set az=" + dd2dms(az_deg)
         return self.send(command)
 
     def set_pointing_alt(self,alt_dd):
         '''
-            specifcy pointing in decimal degrees
+        Specify pointing altitude (elevation) in decimal degrees
         '''
         command = "set alt=" + dd2dms(alt_dd)
         return self.send(command)
@@ -481,15 +505,26 @@ class archimage():
     -------------------------
 
     These commands configure the mount's home position
-
     '''
     def find_home(self):
+        '''
+        Find the home position
+        '''
         return self.send("home find")
     def home_setup(self):
+        '''
+        Setup from the home position... don't know what this does.
+        '''
         return self.send("home setup")
     def park(self):
+        '''
+        Park the mount
+        '''
         return self.send("home park")
     def set_park(self):
+        '''
+        Set the mount park position
+        '''
         return self.send("home x_parkset")
 
     '''
@@ -503,7 +538,7 @@ class archimage():
     '''
     def get_ha_rate(self):
         '''
-            return the ha-axis rate in deg/s
+        Get the current hour-angle tracking rate in degrees/second
         '''
         command = "get trackha"
         resp = self.send(command)
@@ -513,6 +548,9 @@ class archimage():
             return random.uniform(0.000,4.000)
 
     def get_dec_rate(self):
+        '''
+        Get the current declination tracking rate in degrees/second
+        '''
         command = "get trackdec"
         resp = self.send(command)
         if self.live_comm:
@@ -522,16 +560,16 @@ class archimage():
 
     def set_ha_rate(self,rate_ds):
         '''
-            Specifcy ha tracking rate in deg/s
-            set trackha=+0.047314d
+        Specifcy ha tracking rate in deg/s
+        set trackha=+0.047314d
         '''
         command = "set trackha=" +  "{:.5f}".format(rate_ds) + "d"
         return self.send(command)
 
     def set_dec_rate(self,rate_ds):
         '''
-            Specifcy dec tracking rate in deg/s
-            set trackdec=-0.115978d
+        Specifcy dec tracking rate in deg/s
+        set trackdec=-0.115978d
         '''
         command = "set trackdec=" + "{:.5f}".format(rate_ds) + "d"
         return self.send(command)
@@ -548,22 +586,34 @@ class archimage():
     # set/get target parameters
 
     def set_object_ra(self,hour_angle_dd):
+        '''
+        Set the target object hour angle in decimal degrees
+        '''
         command = "set objectra=" + "{:.5f}".format(hour_angle_dd/15) + "h"
         return self.send(command)
 
     def get_object_ra(self):
+        '''
+        Get the target object hour angle in decimal hours
+        '''
         command = "get objectra"
         resp = self.send(command)
         if self.live_comm:
-            return hms2dd(resp['payload'])
+            return hms2dh(resp['payload'])
         else:
             return random.uniform(0.000,359.999)
 
     def set_object_dec(self,declination_dd):
+        '''
+        Set the target object declination angle in decimal degrees
+        '''
         command = "set objectdec=" + "{:.5f}".format(declination_dd) + "d"
         return self.send(command)
 
     def get_object_dec(self):
+        '''
+        Get the target object declination angle in decimal degrees
+        '''
         command = "get objectdec"
         resp = self.send(command)
         if self.live_comm:
@@ -572,14 +622,23 @@ class archimage():
             return random.uniform(-90.000,90.000)
 
     def get_object_az(self):
+        '''
+        Get the target object north azimuth in decimal degrees
+        '''
         command = "get objectaz"
         resp = self.send(command)
         if self.live_comm:
-            return dms2dd(resp['payload'])
+            az_deg = dms2dd(resp['payload'])
+            # modify for south azimuth:
+            az_deg = (az_deg + 180)%360
+            return az_deg
         else:
             return random.uniform(0.000,360.000)
 
     def get_object_alt(self):
+        '''
+        Get the target object altitude (elevation) in decimal degrees
+        '''
         command = "get objectalt"
         resp = self.send(command)
         if self.live_comm:
@@ -588,10 +647,19 @@ class archimage():
             return random.uniform(-90.000,90.000)
 
     def goto(self):
+        '''
+        Execute a GOTO for the current target
+        '''
         return self.send("goto")
 
-    def altaz_goto(self,alt,az):
-        return self.send("goto objectaz="+dd2dms(az)+" objectalt="+dd2dms(alt))
+    def altaz_goto(self,alt_deg,az_deg):
+        '''
+        Slew to an alt/az target
+        Input north azimuth (0 degrees is North)
+        '''
+        # modify for south azimuth:
+        az_deg = (az_deg - 180)%360
+        return self.send("goto objectaz="+dd2dms(az_deg)+" objectalt="+dd2dms(alt_deg))
     '''
     -------------------------
     7) Paddle
@@ -601,34 +669,64 @@ class archimage():
 
     '''
     def set_speed(self,slew_speed_ds):
+        '''
+        Set jog speed in degrees/second
+        '''
         command = "set speed=" + "{:.5f}".format(slew_speed_ds) + "d"
         return self.send(command)
 
     def move_north(self):
-         return self.send("move north")
+        '''
+        Jog North
+        '''
+        return self.send("move north")
 
     def stop_north(self):
-         return self.send("stop north")
+        '''
+        Stop jogging North
+        '''
+        return self.send("stop north")
 
     def move_east(self):
-         return self.send("move east")
+        '''
+        Jog East
+        '''
+        return self.send("move east")
 
     def stop_east(self):
-         return self.send("stop east")
+        '''
+        Stop jogging East
+        '''
+        return self.send("stop east")
 
     def move_south(self):
-         return self.send("move south")
+        '''
+        Jog South
+        '''
+        return self.send("move south")
 
     def stop_south(self):
-         return self.send("stop south")
+        '''
+        Stop jogging South
+        '''
+        return self.send("stop south")
 
     def move_west(self):
-         return self.send("move west")
+        '''
+        Jog West
+        '''
+        return self.send("move west")
 
     def stop_west(self):
-         return self.send("stop west")
+        '''
+        Stop jogging West
+        '''
+        return self.send("stop west")
 
     def stop(self):
+        '''
+        Stop all movement
+        '''
         if self.live_comm:
             return self.send("stop")
         else:
@@ -717,7 +815,7 @@ class archimage():
 
 def dd2dms(degrees):
     '''
-        given angle as degree (some kind of number...) return signed dms string
+    given angle as degree (some kind of number...) return signed dms string
     '''
     a = ephem.degrees(str(degrees))
     dms = str(a).replace(':','d',1)
@@ -728,7 +826,7 @@ def dd2dms(degrees):
 
 def dd2hms(degrees):
     '''
-        given angle as degree (some kind of number...) return signed hms string
+    given angle as degree (some kind of number...) return signed hms string
     '''
     a = ephem.hours(ephem.degrees(str(degrees)))
     hms = str(a).replace(':','h',1)
@@ -739,7 +837,7 @@ def dd2hms(degrees):
 
 def dms2dd(dms):
     '''
-        given signed dms string return float degrees
+    given signed dms string return float degrees
     '''
     dms = dms.strip()
     dms = dms.replace('d',':')
@@ -751,7 +849,7 @@ def dms2dd(dms):
 
 def hms2dd(hms):
     '''
-        given signed hms string return float degrees
+    given signed hms string return float degrees
     '''
     hms = hms.strip()
     hms = hms.replace('h',':')
@@ -763,10 +861,75 @@ def hms2dd(hms):
 
 def hms2dh(hms):
     '''
-        given signed hms string return float hours
+    given signed hms string return float hours
     '''
     dh = hms2dd(hms)/15
     return dh
+
+def RaDec2AzEl(DateTime,Ra,Dec,Lat,Lon,Alt=0,display=False):
+    '''
+    Given ra/dec pointing and an observation lat(deg),lon(deg),alt(m) at a UTC time
+    convert to az/el angles.  All inputs and outputs in degrees.
+    '''
+    # We need to create a "Body" in pyephem, which represents the coordinate
+    # http://stackoverflow.com/questions/11169523/how-to-compute-alt-az-for-given-galactic-coordinate-glon-glat-with-pyephem
+    body = ephem.FixedBody()
+    body._ra = np.radians(Ra)
+    body._dec = np.radians(Dec)
+    # Set observer parameters
+    obs = ephem.Observer()
+    obs.lon = np.radians(Lon)
+    obs.lat = np.radians(Lat)
+    obs.elevation = Alt
+    obs.date = DateTime
+    # Turn refraction off by setting pressure to zero
+    obs.pressure = 0
+    # Compute alt / az of the body for that observer
+    body.compute(obs)
+    az, alt = np.degrees([body.az, body.alt])
+    return az, alt
+
+def AzEl2RaDec(DateTime,Az,El,Lat,Lon,Alt=0,display=False):
+    '''
+    Given az/el pointing and an observation lat(deg),lon(deg),alt(m) at a UTC time
+    convert to rad/dec angles.  All inputs and outputs in degrees.
+    '''
+    # convert to radians
+    az = np.radians(Az)
+    el = np.radians(El)
+    lon = np.radians(Lon)
+    lat = np.radians(Lat)
+    alt = Alt
+    # Define an observer:
+    observer = ephem.Observer()
+    observer.lon = lon
+    observer.lat = lat
+    observer.elevation = alt
+    observer.date = DateTime
+    # Compute ra,dec
+    ra,dec = observer.radec_of(az, el)
+    if display:
+        print "Time: " + datetime.strftime(DateTime,'%d-%m-%Y %H:%M:%S.%f')
+        print "RA: " + str(np.degrees(ra))
+        print "DEC: " + str(np.degrees(dec))
+    # return output
+    return np.degrees(ra),np.degrees(dec)
+def GreatCircleDelta(az1,el1,az2,el2):
+	'''
+	Return sthe central angle between two az/el coordinates (great circle distance)
+	Input/Output in degrees
+	'''
+	lam1 = np.deg2rad(az1)
+	phi1 = np.deg2rad(el1)
+	lam2 = np.deg2rad(az2)
+	phi2 = np.deg2rad(el2)
+	dlam = lam2-lam1
+	if abs(dlam) < 0.00001:
+		delta = 0
+	else:
+		sigma = np.arccos( (np.sin(phi1)*np.sin(phi2)) + (np.cos(phi1)*np.cos(phi2)*np.cos(dlam)) )
+		delta = abs(np.rad2deg(sigma))
+	return delta
 
 def dbug(flag,text):
     if flag:
@@ -774,8 +937,8 @@ def dbug(flag,text):
 
 def countup(counter):
     '''
-        The following increments in the counter in DECIMAL.
-        I based this counting scheme on what I observed during comms capture
+    The following increments in the counter in DECIMAL.
+    I based this counting scheme on what I observed during comms capture
     '''
     if counter == 0:
         counter = 17
@@ -839,18 +1002,18 @@ def checkbytes(f16, modulus=255):
 
 def compute_sidereal_time(lon,lat=0,alt=0,t=datetime.utcnow()):
     '''
-        Return local apparent sidereal time in decimal hours:
+    Return local apparent sidereal time in decimal hours:
 
-        Inputs [required]
-        lon - (float) longitude in decimal degrees
+    Inputs [required]
+    lon - (float) longitude in decimal degrees
 
-        Inputs [optional]
-        lat - (float, default=0) latitude in decimal degrees
-        alt - (float, default=0) altitude in meteres
-        time - (float, default=now) datetime object
+    Inputs [optional]
+    lat - (float, default=0) latitude in decimal degrees
+    alt - (float, default=0) altitude in meteres
+    time - (float, default=now) datetime object
 
-        Output
-        sidereal_time - (float) local apparent sidereal time in decimal hours
+    Output
+    sidereal_time - (float) local apparent sidereal time in decimal hours
     '''
     ovr = ephem.Observer()
     ovr.lon = lon * ephem.degree
@@ -868,8 +1031,8 @@ def compute_sidereal_time(lon,lat=0,alt=0,t=datetime.utcnow()):
 '''
 def Console(live=True):
     '''
-        Provides console interface to talk to the mount.  Takes care of command formatting.
-        Type "exit" to end.
+    Provides console interface to talk to the mount.  Takes care of command formatting.
+    Type "exit" to end.
     '''
     print "-------------------------------------------------------------"
     print "           Archimage Telescope Command Console"
