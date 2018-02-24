@@ -13,8 +13,8 @@ class archimage():
         self.debug_flag = False
         
         # location:
-        self.lat = 39.94963
-        self.lon = -83.81756
+        self.lat = 39.9477
+        self.lon = -83.9328
         self.alt = 316
         
         # astronomy stuff:
@@ -103,7 +103,7 @@ class archimage():
                     'object_alt': self.get_object_alt(),
                     'object_az': self.get_object_az()
                     },
-                'status': self.get_status()
+                'status': 'test'
                 }
 
         print json.dumps(data,indent=4)
@@ -409,7 +409,7 @@ class archimage():
         command = "get dec"
         resp = self.send(command)
         if self.live_comm:
-            dms2dd(resp['payload'])
+            return dms2dd(resp['payload'])
         else:
             #return random.uniform(-90.000,90.000)
             return self.virtual_dec
@@ -493,7 +493,7 @@ class archimage():
         command = "get trackha"
         resp = self.send(command)
         if self.live_comm:
-            return float(resp['payload'])
+            return float(dms2dd(resp['payload']))
         else:
             return random.uniform(0.000,4.000)
 
@@ -501,7 +501,7 @@ class archimage():
         command = "get trackdec"
         resp = self.send(command)
         if self.live_comm:
-            return float(resp['payload'])
+            return float(dms2dd(resp['payload']))
         else:
             return random.uniform(0.000,4.000)
 

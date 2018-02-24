@@ -5,7 +5,7 @@ from test_inspect import describe_class_methods
 import json, traceback
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 
-mount = archimage.archimage(live=False)
+mount = archimage.archimage(live=True)
 
 def index(request):
 	js = describe_class_methods(mount)
