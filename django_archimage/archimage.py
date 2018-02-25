@@ -14,8 +14,8 @@ class archimage():
         self.debug_flag = False
 
         # location:
-        self.lat = 39.9477
-        self.lon = -83.9328
+        self.lat = 39
+        self.lon = -83
         self.alt = 316
 
         # astronomy stuff:
