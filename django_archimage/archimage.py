@@ -67,7 +67,7 @@ class archimage():
 
     def set_virtual_ra(self,ra_dd):
         print "setting virtual ra to:", ra_dd
-        self.virtual_ra = float(ra_dd)
+        self.virtual_ra = float(ra_dd)/15
         return 'virtual ra set'
 
     def connect(self):

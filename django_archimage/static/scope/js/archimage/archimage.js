@@ -17,10 +17,10 @@ function SendCommand(command,arguments) {
 
 // mouse clicked?
 var is_clicked = false
-$(document).mousedown(function(e) { 
+$(document).mousedown(function(e) {
   is_clicked = true
 });
-$(document).mouseup(function(e) { 
+$(document).mouseup(function(e) {
   is_clicked = false
 });
 
@@ -48,7 +48,7 @@ $(function(){
           });
   })
 
-// Helper functions: 
+// Helper functions:
 $(function(){
   $("#align_level_south").mousedown(function(){
         SendCommand('init_align',null); // Send the command to start moving
@@ -58,7 +58,7 @@ $(function(){
       });
 });
 
-// Home: 
+// Home:
 $(function(){
   $("#home_setup").mousedown(function(){
         SendCommand('home_setup',null); // Send the command to start moving
@@ -68,7 +68,7 @@ $(function(){
       });
 });
 
-// Park: 
+// Park:
 $(function(){
   $("#park_set").mousedown(function(){
         SendCommand('set_park',null); // Send the command to start moving
@@ -117,8 +117,8 @@ $(function(){
 // -----------------------------------------------------------------------------------------------------
 //                                      Paddle Controls
 // -----------------------------------------------------------------------------------------------------
-// Paddle controls: 
-// - commands delivered via data-downcommand and data-upcommand (press and release), 
+// Paddle controls:
+// - commands delivered via data-downcommand and data-upcommand (press and release),
 // - id='paddle_something' to match contains jsquery for 'paddle'
 $(function(){
   $("[id*='paddle']").bind('touchstart mousedown', function() {
@@ -245,7 +245,7 @@ function check_goto_coordinates(){
       $("#goto-dec-seconds-form").hide();
     } else { // sexasigmal
       // hour angle
-      $("#goto-ra-degrees-form").hide(); 
+      $("#goto-ra-degrees-form").hide();
       $("#goto-ra-hours-form").show();
       $("#goto-ra-minutes-form").show();
       $("#goto-ra-seconds-form").show();
@@ -294,7 +294,7 @@ function submit_pointing(){
   var seconds = 0.0
   var coord = $('#coordinate-id').val();
 
-  if ($("#toggle-angle-format").prop('checked')) { // degrees 
+  if ($("#toggle-angle-format").prop('checked')) { // degrees
     degrees = parseFloat($("#degrees").val())
   } else { // sexasigmal
     minutes = parseFloat($("#minutes").val())
@@ -313,7 +313,7 @@ function submit_pointing(){
 }
 
 function check_coordinates(){
-  if ($("#toggle-angle-format").prop('checked')) { // degrees 
+  if ($("#toggle-angle-format").prop('checked')) { // degrees
     $("#minutes-form").hide();
     $("#seconds-form").hide();
     $("#hours-form").hide();
@@ -348,7 +348,7 @@ $(function(){
   });
   $("#simulator-ra-position-slider").bind('touchmove mousemove touchend mouseup', function() {
     if (is_clicked) {
-      ra = sim_ra_position_slider.bootstrapSlider('getValue');
+      ra = sim_ra_position_slider.bootstrapSlider('getValue')
       SendCommand('set_virtual_ra',JSON.stringify({ra_dd:ra}));
     }
   });
