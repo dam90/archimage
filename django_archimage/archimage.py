@@ -30,11 +30,13 @@ class archimage():
 
         # virtual mount:
         self.virtual_abort = False # Kills slew operations when True
-        self.virtual_ra = 0 # degrees...?
+        self.virtual_ra = 0 # decimal hours
         self.virtual_dec = 0 # degrees
         self.virtual_speed = 10 # degrees/second
         self.virtual_ra_rate = 10 # degrees/second
         self.virtual_dec_rate = 10 # degrees /seconds
+        self.virtual_target_ra = 0 # decimal hours
+        self.virtual_target_dec = 0 # decimal degrees
 
         # initializing comm
         if self.live_comm : # open serial port
@@ -106,7 +108,7 @@ class archimage():
                     'object_alt': self.get_object_alt(),
                     'object_az': self.get_object_az()
                     },
-                'status': 'test'
+                'status': self.get_status()
                 }
 
         print json.dumps(data,indent=4)
@@ -114,7 +116,11 @@ class archimage():
         return data
 
     def get_status(self):
-        return self.send("satus")
+        if self.live_comm:
+            response = self.send("satus")
+            return response['payload']
+        else:
+            return 'fake status'
 
     def get_object(self):
         '''
