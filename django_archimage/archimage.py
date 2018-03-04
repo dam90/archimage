@@ -475,7 +475,7 @@ class archimage():
             az_deg = dms2dd(resp['payload'])
             # modify for south azimuth:
             az_deg = (az_deg+180)%360
-            return dms2dd(az_deg)
+            return az_deg
         else:
             # return simulated az/el
             az_deg,alt_deg = RaDec2AzEl(datetime.now(),self.virtual_ra*15,self.virtual_dec,self.lat,self.lon)
